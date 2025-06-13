@@ -1,0 +1,43 @@
+
+[
+  {
+    "question": "sin(A + B) expansion",
+    "answer": "\\sin(A + B) = \\sin A \\cos B + \\cos A \\sin B"
+  },
+  {
+    "question": "cos(A + B) expansion",
+    "answer": "\\cos(A + B) = \\cos A \\cos B - \\sin A \\sin B"
+  },
+  {
+    "question": "tan(A + B) expansion",
+    "answer": "\\tan(A + B) = \\frac{\\tan A + \\tan B}{1 - \\tan A \\tan B}"
+  },
+  {
+    "question": "sin(A - B) expansion",
+    "answer": "\\sin(A - B) = \\sin A \\cos B - \\cos A \\sin B"
+  },
+  {
+    "question": "cos(A - B) expansion",
+    "answer": "\\cos(A - B) = \\cos A \\cos B + \\sin A \\sin B"
+  },
+  {
+    "question": "Double angle formula for sin(2A)",
+    "answer": "\\sin(2A) = 2\\sin A \\cos A"
+  },
+  {
+    "question": "Double angle formula for cos(2A)",
+    "answer": "\\cos(2A) = \\cos^2 A - \\sin^2 A = 2\\cos^2 A - 1 = 1 - 2\\sin^2 A"
+  },
+  {
+    "question": "Triple angle formula for sin(3A)",
+    "answer": "\\sin(3A) = 3\\sin A - 4\\sin^3 A"
+  },
+  {
+    "question": "Half angle formula for sin(A/2)",
+    "answer": "\\sin\\frac{A}{2} = \\pm\\sqrt{\\frac{1 - \\cos A}{2}}"
+  },
+  {
+    "question": "Product to sum formula for sin A sin B",
+    "answer": "\\sin A \\sin B = \\frac{1}{2}[\\cos(A-B) - \\cos(A+B)]"
+  }
+]

@@ -1,0 +1,35 @@
+
+[
+  {
+    "question": "Energy of electron in nth orbit (Bohr model)",
+    "answer": "E_n = -\\frac{13.6}{n^2} \\text{ eV}"
+  },
+  {
+    "question": "Radius of nth orbit in hydrogen atom",
+    "answer": "r_n = 0.529 \\times n^2 \\text{ Å}"
+  },
+  {
+    "question": "de Broglie wavelength",
+    "answer": "\\lambda = \\frac{h}{mv}"
+  },
+  {
+    "question": "Heisenberg uncertainty principle",
+    "answer": "\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi}"
+  },
+  {
+    "question": "Rydberg equation for hydrogen spectrum",
+    "answer": "\\frac{1}{\\lambda} = R_H \\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right)"
+  },
+  {
+    "question": "Velocity of electron in nth orbit",
+    "answer": "v_n = \\frac{2.18 \\times 10^6}{n} \\text{ m/s}"
+  },
+  {
+    "question": "Atomic number and mass number relation",
+    "answer": "A = Z + N"
+  },
+  {
+    "question": "Planck's quantum theory",
+    "answer": "E = h\\nu = \\frac{hc}{\\lambda}"
+  }
+]
