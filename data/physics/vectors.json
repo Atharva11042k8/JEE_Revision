@@ -1,0 +1,23 @@
+
+[
+  {
+    "question": "Magnitude of vector sum (parallelogram law)",
+    "answer": "|\\vec{A} + \\vec{B}| = \\sqrt{A^2 + B^2 + 2AB\\cos\\theta}"
+  },
+  {
+    "question": "Magnitude of vector difference",
+    "answer": "|\\vec{A} - \\vec{B}| = \\sqrt{A^2 + B^2 - 2AB\\cos\\theta}"
+  },
+  {
+    "question": "Dot product of two vectors",
+    "answer": "\\vec{A} \\cdot \\vec{B} = AB\\cos\\theta"
+  },
+  {
+    "question": "Cross product magnitude",
+    "answer": "|\\vec{A} \\times \\vec{B}| = AB\\sin\\theta"
+  },
+  {
+    "question": "Unit vector formula",
+    "answer": "\\hat{A} = \\frac{\\vec{A}}{|\\vec{A}|}"
+  }
+]

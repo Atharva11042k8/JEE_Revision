@@ -1,0 +1,43 @@
+
+[
+  {
+    "question": "First equation of motion for uniform acceleration",
+    "answer": "v = u + at"
+  },
+  {
+    "question": "Second equation of motion for uniform acceleration",
+    "answer": "s = ut + \\frac{1}{2}at^2"
+  },
+  {
+    "question": "Third equation of motion (velocity-displacement relation)",
+    "answer": "v^2 = u^2 + 2as"
+  },
+  {
+    "question": "Average velocity for uniform acceleration",
+    "answer": "v_{avg} = \\frac{u + v}{2}"
+  },
+  {
+    "question": "Displacement in nth second",
+    "answer": "s_n = u + \\frac{a}{2}(2n - 1)"
+  },
+  {
+    "question": "Relative velocity when two objects move in same direction",
+    "answer": "v_{rel} = v_1 - v_2"
+  },
+  {
+    "question": "Relative velocity when two objects move in opposite directions",
+    "answer": "v_{rel} = v_1 + v_2"
+  },
+  {
+    "question": "Maximum height reached in projectile motion",
+    "answer": "H = \\frac{u^2\\sin^2\\theta}{2g}"
+  },
+  {
+    "question": "Range of projectile motion",
+    "answer": "R = \\frac{u^2\\sin(2\\theta)}{g}"
+  },
+  {
+    "question": "Time of flight in projectile motion",
+    "answer": "T = \\frac{2u\\sin\\theta}{g}"
+  }
+]
