@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -97,28 +96,17 @@ const Index = () => {
 
   // Initialize animations on component mount
   useEffect(() => {
-    // Initial page load animations
     setTimeout(() => {
       if (titleRef.current) {
         AnimationEngine.scaleIn(titleRef.current, 0);
       }
       AnimationEngine.fadeInUp('.selection-card', 0.3);
-      AnimationEngine.fadeInUp('.feature-badge', 0.6);
-      AnimationEngine.floatingParticles();
     }, 100);
-
-    // Add glow effect to main elements
-    setTimeout(() => {
-      AnimationEngine.pulseGlow('.main-card');
-    }, 1000);
   }, []);
 
-  // Function to load chapter formulas from JSON files with updated path
+  // Function to load chapter formulas from JSON files
   const loadChapterFormulas = async (filePath: string) => {
     setLoading(true);
-    
-    // Add loading animation
-    AnimationEngine.fadeInUp('.loading-spinner', 0);
     
     try {
       const response = await fetch(`/data/${filePath}`);
@@ -132,34 +120,22 @@ const Index = () => {
       setFormulaIndex(0);
       setShowAnswer(false);
       
-      // Animate the formula card entrance
       setTimeout(() => {
         if (cardRef.current) {
-          AnimationEngine.scaleIn(cardRef.current, 0);
-        }
-        if (questionRef.current) {
-          AnimationEngine.slideInFromLeft(questionRef.current, 0.2);
+          AnimationEngine.fadeInUp(cardRef.current, 0);
         }
       }, 100);
       
-      toast.success(`✅ Loaded ${data.length} formulas successfully!`, {
-        description: `Ready to practice ${selectedChapter} formulas`
-      });
+      toast.success(`✅ Loaded ${data.length} formulas successfully!`);
     } catch (error) {
       console.error('Error loading formulas:', error);
-      toast.error("❌ Failed to load formulas", {
-        description: "Please check if the JSON file exists and try again."
-      });
+      toast.error("❌ Failed to load formulas");
       
-      // Fallback to sample data for demonstration
+      // Fallback to sample data
       const sampleData: Formula[] = [
         {
           question: "Sample formula question for " + selectedChapter,
           answer: "Sample formula answer: \\frac{a + b}{c}"
-        },
-        {
-          question: "Another sample question",
-          answer: "E = mc^2"
         }
       ];
       
@@ -172,47 +148,24 @@ const Index = () => {
     }
   };
 
-  // Function to get next random formula with enhanced animations
+  // Function to get next random formula
   const getNextFormula = () => {
     if (formulas.length === 0) return;
-    
-    // Animate out current question
-    if (questionRef.current) {
-      AnimationEngine.slideInFromRight(questionRef.current, 0);
-    }
     
     let nextIndex;
     do {
       nextIndex = Math.floor(Math.random() * formulas.length);
     } while (nextIndex === formulaIndex && formulas.length > 1);
     
-    setTimeout(() => {
-      setFormulaIndex(nextIndex);
-      setCurrentFormula(formulas[nextIndex]);
-      setShowAnswer(false);
-      
-      // Animate in new question
-      if (questionRef.current) {
-        AnimationEngine.slideInFromLeft(questionRef.current, 0.1);
-      }
-    }, 300);
+    setFormulaIndex(nextIndex);
+    setCurrentFormula(formulas[nextIndex]);
+    setShowAnswer(false);
   };
 
-  // Function to reveal answer with animation
+  // Function to reveal answer
   const revealAnswer = () => {
     setShowAnswer(true);
-    
-    // Animate answer reveal
-    setTimeout(() => {
-      if (answerRef.current) {
-        AnimationEngine.cardFlip(answerRef.current);
-        AnimationEngine.liquidFill(answerRef.current);
-      }
-    }, 100);
-    
-    toast.success("🎯 Answer revealed!", {
-      description: "Study the formula and click Next when ready"
-    });
+    toast.success("🎯 Answer revealed!");
   };
 
   // Effect to render math when formulas change
@@ -232,11 +185,11 @@ const Index = () => {
         } catch (error) {
           console.warn('KaTeX rendering error:', error);
         }
-      }, 100);
+      }, 200);
     }
   }, [currentFormula, showAnswer]);
 
-  // Handle subject change with animations
+  // Handle subject change
   const handleSubjectChange = (value: string) => {
     setSelectedSubject(value);
     setSelectedChapter('');
@@ -244,12 +197,7 @@ const Index = () => {
     setFormulas([]);
     setShowAnswer(false);
     
-    // Animate selection feedback
-    AnimationEngine.fadeInUp('.chapter-select', 0.2);
-    
-    toast.info(`📚 Selected ${value}`, {
-      description: "Now choose a chapter to start practicing"
-    });
+    toast.info(`📚 Selected ${value}`);
   };
 
   // Handle chapter change
@@ -265,28 +213,15 @@ const Index = () => {
   const selectedSubjectData = subjects.find(s => s.name === selectedSubject);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden relative">
-      {/* Enhanced animated background elements */}
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
+      {/* Simplified background elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-green-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
-        
-        {/* Floating particles */}
-        {[...Array(12)].map((_, i) => (
-          <div
-            key={i}
-            className="floating-particle absolute w-2 h-2 bg-blue-400/20 rounded-full"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-          ></div>
-        ))}
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-4 py-8">
-        {/* Enhanced Header */}
+        {/* Header */}
         <div className="text-center mb-12">
           <h1 
             ref={titleRef}
@@ -297,20 +232,6 @@ const Index = () => {
           <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-4">
             Ultimate Revision Tool for Physics, Chemistry & Mathematics
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Badge variant="outline" className="feature-badge text-sm md:text-base px-3 md:px-4 py-2 border-purple-500/50 text-purple-300">
-              <i className="fas fa-brain mr-2"></i>
-              Smart Recall System
-            </Badge>
-            <Badge variant="outline" className="feature-badge text-sm md:text-base px-3 md:px-4 py-2 border-blue-500/50 text-blue-300">
-              <i className="fas fa-random mr-2"></i>
-              Random Practice
-            </Badge>
-            <Badge variant="outline" className="feature-badge text-sm md:text-base px-3 md:px-4 py-2 border-green-500/50 text-green-300">
-              <i className="fas fa-mobile-alt mr-2"></i>
-              Mobile Friendly
-            </Badge>
-          </div>
         </div>
 
         {/* Subject and Chapter Selection */}
@@ -324,7 +245,7 @@ const Index = () => {
                   Select Subject
                 </label>
                 <Select value={selectedSubject} onValueChange={handleSubjectChange}>
-                  <SelectTrigger className="w-full bg-gray-700/50 border-gray-600 text-white text-base md:text-lg p-3 md:p-4 hover:bg-gray-600/50 transition-all duration-300">
+                  <SelectTrigger className="w-full bg-gray-700/50 border-gray-600 text-white text-base md:text-lg p-3 md:p-4">
                     <SelectValue placeholder="Choose a subject..." />
                   </SelectTrigger>
                   <SelectContent className="bg-gray-800 border-gray-700">
@@ -345,7 +266,7 @@ const Index = () => {
               </div>
 
               {/* Chapter Selection */}
-              <div className="space-y-3 chapter-select">
+              <div className="space-y-3">
                 <label className="text-base md:text-lg font-semibold text-purple-400 flex items-center">
                   <i className="fas fa-list mr-2"></i>
                   Select Chapter
@@ -355,7 +276,7 @@ const Index = () => {
                   onValueChange={handleChapterChange}
                   disabled={!selectedSubject}
                 >
-                  <SelectTrigger className="w-full bg-gray-700/50 border-gray-600 text-white text-base md:text-lg p-3 md:p-4 hover:bg-gray-600/50 transition-all duration-300">
+                  <SelectTrigger className="w-full bg-gray-700/50 border-gray-600 text-white text-base md:text-lg p-3 md:p-4">
                     <SelectValue placeholder="Choose a chapter..." />
                   </SelectTrigger>
                   <SelectContent className="bg-gray-800 border-gray-700">
@@ -380,7 +301,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <Card 
               ref={cardRef}
-              className="main-card p-6 md:p-8 bg-gradient-to-r from-gray-800/60 to-gray-900/60 backdrop-blur-xl border-gray-700/50 shadow-2xl transform hover:scale-[1.01] transition-all duration-300"
+              className="p-6 md:p-8 bg-gradient-to-r from-gray-800/60 to-gray-900/60 backdrop-blur-xl border-gray-700/50 shadow-2xl"
             >
               {/* Question */}
               <div className="mb-8">
@@ -393,37 +314,37 @@ const Index = () => {
                     Formula {formulaIndex + 1} of {formulas.length}
                   </span>
                 </div>
-                <div 
-                  ref={questionRef}
-                  className="bg-gray-900/50 rounded-lg p-4 md:p-6 border border-gray-700/50 hover:border-blue-500/30 transition-all duration-300"
-                >
-                  <p className="text-lg md:text-xl lg:text-2xl text-gray-100 leading-relaxed">
-                    {currentFormula.question}
-                  </p>
+                <div className="bg-gray-900/50 rounded-lg p-4 md:p-6 border border-gray-700/50">
+                  <div className="text-lg md:text-xl lg:text-2xl text-gray-100 leading-relaxed">
+                    {currentFormula.question.includes('\\') ? (
+                      <span dangerouslySetInnerHTML={{ __html: `$$${currentFormula.question}$$` }} />
+                    ) : (
+                      currentFormula.question
+                    )}
+                  </div>
                 </div>
               </div>
 
               {/* Answer */}
-              <div className={`mb-8 transition-all duration-500 ${showAnswer ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-4'}`}>
-                {showAnswer && (
-                  <>
-                    <div className="flex items-center mb-4">
-                      <Badge className="bg-green-500/20 text-green-300 border-green-500/50">
-                        <i className="fas fa-check-circle mr-1"></i>
-                        Answer
-                      </Badge>
+              {showAnswer && (
+                <div className="mb-8">
+                  <div className="flex items-center mb-4">
+                    <Badge className="bg-green-500/20 text-green-300 border-green-500/50">
+                      <i className="fas fa-check-circle mr-1"></i>
+                      Answer
+                    </Badge>
+                  </div>
+                  <div className="bg-gradient-to-r from-green-900/30 to-blue-900/30 rounded-lg p-4 md:p-6 border border-green-500/30">
+                    <div className="text-lg md:text-2xl lg:text-3xl text-green-100 leading-relaxed font-mono">
+                      {currentFormula.answer.includes('\\') ? (
+                        <span dangerouslySetInnerHTML={{ __html: `$$${currentFormula.answer}$$` }} />
+                      ) : (
+                        currentFormula.answer
+                      )}
                     </div>
-                    <div 
-                      ref={answerRef}
-                      className="bg-gradient-to-r from-green-900/30 to-blue-900/30 rounded-lg p-4 md:p-6 border border-green-500/30 hover:border-green-400/50 transition-all duration-300"
-                    >
-                      <p className="text-lg md:text-2xl lg:text-3xl text-green-100 leading-relaxed font-mono break-words">
-                        ${currentFormula.answer}$
-                      </p>
-                    </div>
-                  </>
-                )}
-              </div>
+                  </div>
+                </div>
+              )}
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -434,7 +355,7 @@ const Index = () => {
                       revealAnswer();
                     }}
                     size="lg"
-                    className="reveal-btn bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 md:py-4 px-6 md:px-8 text-base md:text-lg shadow-lg transform hover:scale-105 transition-all duration-200"
+                    className="reveal-btn bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 md:py-4 px-6 md:px-8 text-base md:text-lg"
                   >
                     <i className="fas fa-eye mr-2"></i>
                     Reveal Answer
@@ -446,7 +367,7 @@ const Index = () => {
                       getNextFormula();
                     }}
                     size="lg"
-                    className="next-btn bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white font-semibold py-3 md:py-4 px-6 md:px-8 text-base md:text-lg shadow-lg transform hover:scale-105 transition-all duration-200"
+                    className="next-btn bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white font-semibold py-3 md:py-4 px-6 md:px-8 text-base md:text-lg"
                   >
                     <i className="fas fa-arrow-right mr-2"></i>
                     Next Formula
@@ -459,7 +380,7 @@ const Index = () => {
 
         {/* Loading State */}
         {loading && (
-          <div className="text-center py-12 loading-spinner">
+          <div className="text-center py-12">
             <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-400 mb-4"></div>
             <p className="text-gray-400 text-lg">Loading formulas...</p>
           </div>
