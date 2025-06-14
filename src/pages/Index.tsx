@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -7,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { AnimationEngine } from '@/utils/animations';
 import { SUBJECT_CONFIG } from '@/data/subjectConfig';
+import Latex from "@/components/Latex";
 
 // Define formula type (could move to global.d.ts)
 interface Formula {
@@ -236,12 +236,12 @@ const Index = () => {
                   </span>
                 </div>
                 <div className="bg-gray-900/50 rounded-lg p-4 md:p-6 border border-gray-700/50">
+                  {/* Render LaTeX as HTML */}
                   <div className="text-lg md:text-xl lg:text-2xl text-gray-100 leading-relaxed">
-                    <span className="latex-formula" dangerouslySetInnerHTML={{ __html: currentFormula.question }} />
+                    <Latex latex={currentFormula.question} block={false} />
                   </div>
                 </div>
               </div>
-
               {/* Answer */}
               {showAnswer && (
                 <div className="mb-8">
@@ -253,12 +253,11 @@ const Index = () => {
                   </div>
                   <div className="bg-gradient-to-r from-green-900/30 to-blue-900/30 rounded-lg p-4 md:p-6 border border-green-500/30">
                     <div className="text-lg md:text-2xl lg:text-3xl text-green-100 leading-relaxed font-mono">
-                      <span className="latex-formula" dangerouslySetInnerHTML={{ __html: currentFormula.answer }} />
+                      <Latex latex={currentFormula.answer} block={false} />
                     </div>
                   </div>
                 </div>
               )}
-
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 {!showAnswer ? (
