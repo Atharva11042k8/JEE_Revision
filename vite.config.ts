@@ -20,3 +20,21 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
+
+
+
+
+
+
+
+// vite.config.ts
+export default defineConfig({
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'src/main.ts',
+        sw: 'src/service-worker.ts', // Include this
+      },
+    },
+  },
+});
