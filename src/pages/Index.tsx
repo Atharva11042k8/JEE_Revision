@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -24,6 +25,7 @@ const Index = () => {
   const [showAnswer, setShowAnswer] = useState(false);
   const [loading, setLoading] = useState(false);
   const [formulaIndex, setFormulaIndex] = useState(0);
+  const [shownIndices, setShownIndices] = useState<number[]>([]); // Track indices already shown
 
   // Animation refs (minimal)
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -42,11 +44,9 @@ const Index = () => {
   // Show formula interface after chapter is picked
   const handleChapterChange = (chapterName: string) => {
     setSelectedChapter(chapterName);
-    // Find file path for this chapter
     const subject = SUBJECT_CONFIG.find(s => s.name === selectedSubject);
     const chapter = subject?.chapters.find(c => c.name === chapterName);
     if (chapter) {
-      // Always use /data/${file}
       loadChapterFormulas(chapter.file);
       setShowInterface(true);
     }
@@ -56,7 +56,6 @@ const Index = () => {
   const loadChapterFormulas = async (filePath: string) => {
     setLoading(true);
     try {
-      // Sanitized path handling
       let cleanPath = filePath.replace(/^\/+/, ""); // remove any leading slash just in case
       const response = await fetch(`/data/${cleanPath}`);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
@@ -65,6 +64,7 @@ const Index = () => {
       setCurrentFormula(data[0]);
       setFormulaIndex(0);
       setShowAnswer(false);
+      setShownIndices([0]); // Reset tracking, show first question
 
       setTimeout(() => {
         if (cardRef.current) AnimationEngine.fadeInUp(cardRef.current, 0);
@@ -78,19 +78,40 @@ const Index = () => {
       setCurrentFormula({ question: "Unable to fetch formula data.", answer: "Please check your file path." });
       setFormulaIndex(0);
       setShowAnswer(false);
+      setShownIndices([]);
     } finally { setLoading(false); }
   };
 
-  // Get next random formula
+  // Get next random formula, showing each once
   const getNextFormula = () => {
-    if (formulas.length < 2) return;
-    let nextIndex;
-    do {
-      nextIndex = Math.floor(Math.random() * formulas.length);
-    } while (nextIndex === formulaIndex);
+    if (formulas.length === 0) return;
+
+    // All questions have been shown
+    if (shownIndices.length === formulas.length) {
+      toast.success("🎉 All questions for this chapter have been shown!");
+      // Optionally, reset to allow re-review, uncomment below if desired
+      // setShownIndices([]);
+      // setFormulaIndex(0);
+      // setCurrentFormula(formulas[0]);
+      // setShowAnswer(false);
+      return;
+    }
+
+    let nextIndex: number | undefined;
+    const availableIndices = formulas
+      .map((_, idx) => idx)
+      .filter(idx => !shownIndices.includes(idx));
+    if (availableIndices.length === 0) {
+      // Defensive, shouldn't happen
+      toast.success("🎉 All questions for this chapter have been shown!");
+      return;
+    }
+    // Pick one at random
+    nextIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)];
     setFormulaIndex(nextIndex);
     setCurrentFormula(formulas[nextIndex]);
     setShowAnswer(false);
+    setShownIndices(prev => [...prev, nextIndex]);
   };
 
   // Reveal answer btn
@@ -99,26 +120,8 @@ const Index = () => {
     toast.success("Answer revealed!");
   };
 
-  // Fix KaTeX: Render on changes
-  useEffect(() => {
-    if (window.renderMathInElement && currentFormula) {
-      setTimeout(() => {
-        try {
-          window.renderMathInElement(document.body, {
-            delimiters: [
-              { left: '$$', right: '$$', display: true },
-              { left: '\\[', right: '\\]', display: true },
-              { left: '$', right: '$', display: false },
-              { left: '\\(', right: '\\)', display: false }
-            ],
-            throwOnError: false
-          });
-        } catch (error) {
-          // quietly fail
-        }
-      }, 100);
-    }
-  }, [currentFormula, showAnswer, showInterface]);
+  // Fix KaTeX: Render on changes (NO LONGER NEEDED - we show as plain text)
+  // useEffect(() => {}, [currentFormula, showAnswer, showInterface]); // removed
 
   // Reset state if subject changed
   const handleSubjectChange = (subjectName: string) => {
@@ -128,6 +131,7 @@ const Index = () => {
     setFormulas([]);
     setShowAnswer(false);
     setShowInterface(false);
+    setShownIndices([]);
   };
 
   // Subject config
@@ -235,12 +239,12 @@ const Index = () => {
                     Question
                   </Badge>
                   <span className="text-gray-400 text-sm md:text-base">
-                    Formula {formulaIndex + 1} of {formulas.length}
+                    Formula {shownIndices.length} of {formulas.length}
                   </span>
                 </div>
                 <div className="bg-gray-900/50 rounded-lg p-4 md:p-6 border border-gray-700/50">
-                  {/* Render LaTeX as plain readable text */}
                   <div className="text-lg md:text-xl lg:text-2xl text-gray-100 leading-relaxed">
+                    {/* Convert LaTeX to readable text */}
                     {deLatex(currentFormula.question) || "No question provided."}
                   </div>
                 </div>
