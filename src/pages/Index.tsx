@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { AnimationEngine } from '@/utils/animations';
 import { SUBJECT_CONFIG } from '@/data/subjectConfig';
-import Latex from "@/components/Latex";
+import { deLatex } from '@/utils/deLatex';
 
 // Define formula type (could move to global.d.ts)
 interface Formula {
@@ -70,9 +70,9 @@ const Index = () => {
     } catch (error) {
       toast.error("❌ Could not load formulas.");
       setFormulas([
-        { question: "Sample: $E=mc^2$", answer: "$$E=mc^2$$" }
+        { question: "Unable to fetch formula data.", answer: "Please check your file path." }
       ]);
-      setCurrentFormula({ question: "Sample: $E=mc^2$", answer: "$$E=mc^2$$" });
+      setCurrentFormula({ question: "Unable to fetch formula data.", answer: "Please check your file path." });
       setFormulaIndex(0);
       setShowAnswer(false);
     } finally { setLoading(false); }
@@ -236,9 +236,9 @@ const Index = () => {
                   </span>
                 </div>
                 <div className="bg-gray-900/50 rounded-lg p-4 md:p-6 border border-gray-700/50">
-                  {/* Render LaTeX as HTML */}
+                  {/* Render LaTeX as plain readable text */}
                   <div className="text-lg md:text-xl lg:text-2xl text-gray-100 leading-relaxed">
-                    <Latex latex={currentFormula.question} block={false} />
+                    {deLatex(currentFormula.question) || "No question provided."}
                   </div>
                 </div>
               </div>
@@ -253,7 +253,7 @@ const Index = () => {
                   </div>
                   <div className="bg-gradient-to-r from-green-900/30 to-blue-900/30 rounded-lg p-4 md:p-6 border border-green-500/30">
                     <div className="text-lg md:text-2xl lg:text-3xl text-green-100 leading-relaxed font-mono">
-                      <Latex latex={currentFormula.answer} block={false} />
+                      {deLatex(currentFormula.answer) || "No answer provided."}
                     </div>
                   </div>
                 </div>
