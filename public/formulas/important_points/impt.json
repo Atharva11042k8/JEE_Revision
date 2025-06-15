@@ -1,0 +1,118 @@
+[
+  {
+    "question":"1\\:pm\\;=?",
+    "answer":"10^{-12}m"
+  },
+  {
+    "question":"1\\;eV\\;=?",
+    "answer":"1.602\\times10^{-19}J\\;or\\;96.48\\frac{KJ}{mol}"
+  },
+  {
+    "question":"1\\;erg\\;=\\;?",
+    "answer":"1\\;erg\\;=\\;10^{-7}j"
+  },
+  {
+    "question":"distance of centroid from midoint of edges equilateral triangle and distance of centriod to vertex",
+    "answer":"\\frac{1}{2\\sqrt{3}}a\\;\\;\\;and v\\;ertex \\;ka\\;\\frac{2}{3}h"
+  },
+  {
+    "question":"10^{-2}cm^2\\;=x\\;m^2?",
+    "answer":"10^{-4}"
+  },
+  {
+    "question":"\\text{relaton betwen kinetic energy and momentum}",
+    "answer":"KE\\;=\\;\\frac{p^2}{2m}"
+  },
+  {
+    "question":"\\text{volume of sphere}",
+    "answer":"\\frac{4}{3}\\pi r^3"
+  },
+  {
+    "question":"\\{area of sphere}",
+    "answer":"4\\pi r^2"
+  },
+  {
+    "question":"1rpm\\;=\\;__ rad/s",
+    "answer":"1rpm\\;=\\; \\frac{2\\pi}{60} rad/s"
+  },
+  {
+    "question":"(-2x+3)^2\\;=\\;-1^2(2x-3)^2\\;\\;i.e\\text{powers mai power ke saath common aata hai}",
+    "answer":""
+  },
+  {
+    "question":"in\\;physics\\;: 1\\:in\\:x\\;matlab\\;kya",
+    "answer":"1\\;in\\;x ->\\;sin=1/x"
+  },
+  {
+    "question":"\\text{surface area of a sphere}",
+    "answer":"4\\pi r^2"
+  },
+  {
+    "question":"\\text{surface area of a cone}",
+    "answer":"4\\pi l"
+  },
+  {
+    "question":"volume\\;of\\;cylinde",
+    "answer":"v\\;=\\;πR²L"
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  }
+]
