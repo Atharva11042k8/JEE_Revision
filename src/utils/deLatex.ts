@@ -1,4 +1,3 @@
-
 /**
  * Converts a LaTeX-formatted string into more readable plain text with actual math symbols (², √, ½, Greek, etc).
  */
@@ -42,10 +41,18 @@ const replacements: [RegExp, string | ((...args: string[]) => string)][] = [
   [/(\\text\s*\{([^}]*)\})/g, (_, __, txt) => txt],
 
   // Fractions
-  [/\\frac\{ *([0-9]+) *\}\{ *([0-9]+) *\}/g, (_, num, denom) => toVulgarFraction(num, denom)],
-  [/\\frac\{([A-Za-z0-9+\-*/=^ ]+)\}\{([A-Za-z0-9+\-*/=^ ]+)\}/g, (_, num, den) => `(${num})/(${den})`],
-  // fallback for any: (a)/(b)
-  [/\\frac\{([^}]*)\}\{([^}]*)\}/g, (_, num, den) => `(${deLatex(num)})/(${deLatex(den)})`],
+  // 1. Strict: \frac{a}{b}
+  [/\\frac\{\s*([0-9a-zA-Z\+\-]+)\s*\}\{\s*([0-9a-zA-Z\+\-]+)\s*\}/g, (_, num, denom) => toVulgarFraction(num, denom)],
+  // 2. Strict, general: \frac{something}{denom}
+  [/\\frac\{([^\}]*)\}\{([^\}]*)\}/g, (_, num, den) => `(${deLatex(num)})/(${deLatex(den)})`],
+  // 3. Compact no braces: \frac12 or \fracab
+  [/\\frac([0-9a-zA-Z])([0-9a-zA-Z])/g, (_, num, denom) => toVulgarFraction(num, denom)],
+  // 4. Space-separated: \frac a b
+  [/\\frac\s+([^\s{}]+)\s+([^\s{}]+)/g, (_, num, denom) => toVulgarFraction(num, denom)],
+  // 5. Mixed form: \frac X {Y}
+  [/\\frac\s*([0-9a-zA-Z])\s*\{([^\}]*)\}/g, (_, num, denom) => toVulgarFraction(num, denom)],
+  // 6. Mixed form: \frac {X} Y
+  [/\\frac\s*\{([^\}]*)\}\s*([0-9a-zA-Z])/g, (_, num, denom) => toVulgarFraction(num, denom)],
 
   // Square root and nth root
   [/\\sqrt\{([^}]*)\}/g, (_, r) => simpleRoot(deLatex(r.trim()))],
@@ -62,8 +69,8 @@ const replacements: [RegExp, string | ((...args: string[]) => string)][] = [
   // Vector, hat and overline
   [/\\vec\{([A-Za-z])\}/g, (_, v) => v + "\u20D7"], // a⃗
   [/\\vec ([A-Za-z])/g, (_, v) => v + "\u20D7"],
-  [/\\hat\{([A-Za-z])\}/g, (_, v) => v + "\u0302"], // â
-  [/\\bar\{([A-Za-z])\}/g, (_, v) => v + "\u0304"], // ā
+  [/\\hat\{([A-Za-z])\}/g, (_, v) => v + "\u0302"], // â
+  [/\\bar\{([A-Za-z])\}/g, (_, v) => v + "\u0304"], // ā
 
   // Greek letters (add more as needed)
   [/\\theta/g, "θ"], [/\\Theta/g, "Θ"],
