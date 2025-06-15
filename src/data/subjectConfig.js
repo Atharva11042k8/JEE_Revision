@@ -1,18 +1,15 @@
 
-/**
- * You can easily edit/add subjects and chapters here.
- * Structure:
- *  - name: Display name of subject
- *  - icon: Emoji or string icon
- *  - chapters: Array of chapters, each with display name and relative file path in /data/
- */
+// Structure:
+//   - name: Display name of subject
+//   - icon: Emoji or string icon
+//   - chapters: Array of chapters, each with display name and relative file path (e.g. 'physics/kinematics.json')
 export const SUBJECT_CONFIG = [
   {
     name: 'Physics',
     icon: '⚛️',
     chapters: [
-      { name: 'Kinematics', file: 'data/physics/kinematics.json' },
-      { name: 'Vectors', file: '/data/physics/vectors.json' },
+      { name: 'Kinematics', file: 'physics/kinematics.json' },
+      { name: 'Vectors', file: 'physics/vectors.json' },
       // Add/remove chapters as you like!
     ]
   },

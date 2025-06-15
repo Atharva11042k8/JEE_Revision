@@ -46,6 +46,7 @@ const Index = () => {
     const subject = SUBJECT_CONFIG.find(s => s.name === selectedSubject);
     const chapter = subject?.chapters.find(c => c.name === chapterName);
     if (chapter) {
+      // Always use /data/${file}
       loadChapterFormulas(chapter.file);
       setShowInterface(true);
     }
@@ -55,7 +56,9 @@ const Index = () => {
   const loadChapterFormulas = async (filePath: string) => {
     setLoading(true);
     try {
-      const response = await fetch(`/data/${filePath}`);
+      // Sanitized path handling
+      let cleanPath = filePath.replace(/^\/+/, ""); // remove any leading slash just in case
+      const response = await fetch(`/data/${cleanPath}`);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data: Formula[] = await response.json();
       setFormulas(data);
