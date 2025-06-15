@@ -1,19 +1,17 @@
 
 /**
- * Converts a LaTeX-formatted string into more readable plain text with actual math symbols (not just "a^2" but "a²", fractions like ½, actual square root √, etc).
+ * Converts a LaTeX-formatted string into more readable plain text with actual math symbols (², √, ½, Greek, etc).
  */
-
-// Map for superscript numbers and letters
 const superscriptMap: Record<string, string> = {
   "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴", "5": "⁵", "6": "⁶", "7": "⁷", "8": "⁸", "9": "⁹",
   "+": "⁺", "-": "⁻", "=": "⁼", "(": "⁽", ")": "⁾", "n": "ⁿ", "i": "ⁱ"
 };
-// Map for subscript numbers and some letters
 const subscriptMap: Record<string, string> = {
   "0": "₀", "1": "₁", "2": "₂", "3": "₃", "4": "₄", "5": "₅", "6": "₆", "7": "₇", "8": "₈", "9": "₉",
-  "+": "₊", "-": "₋", "=": "₌", "(": "₍", ")": "₎", "a": "ₐ", "e": "ₑ", "h": "ₕ", "i": "ᵢ", "j": "ⱼ", "k": "ₖ", "l": "ₗ", "m": "ₘ", "n": "ₙ", "o": "ₒ", "p": "ₚ", "r": "ᵣ", "s": "ₛ", "t": "ₜ", "u": "ᵤ", "v": "ᵥ", "x": "ₓ"
+  "+": "₊", "-": "₋", "=": "₌", "(": "₍", ")": "₎",
+  "a": "ₐ", "e": "ₑ", "h": "ₕ", "i": "ᵢ", "j": "ⱼ", "k": "ₖ", "l": "ₗ", "m": "ₘ", "n": "ₙ",
+  "o": "ₒ", "p": "ₚ", "r": "ᵣ", "s": "ₛ", "t": "ₜ", "u": "ᵤ", "v": "ᵥ", "x": "ₓ"
 };
-// Map for common unicode vulgar fractions
 const vulgarFractions: Record<string, string> = {
   "1/2": "½", "1/3": "⅓", "2/3": "⅔", "1/4": "¼", "3/4": "¾", "1/5": "⅕", "2/5": "⅖", "3/5": "⅗", "4/5": "⅘",
   "1/6": "⅙", "5/6": "⅚", "1/8": "⅛", "3/8": "⅜", "5/8": "⅝", "7/8": "⅞"
@@ -23,151 +21,100 @@ const vulgarFractions: Record<string, string> = {
 function toSuperscript(text: string): string {
   return text.split("").map(char => superscriptMap[char] ?? char).join("");
 }
-// Helper to convert text to subscript (when possible)
 function toSubscript(text: string): string {
   return text.split("").map(char => subscriptMap[char] ?? char).join("");
 }
-
-// Helper to convert certain fractions to unicode vulgar, otherwise fallback
 function toVulgarFraction(numer: string, denom: string): string {
-  const cleaned = numer.trim() + "/" + denom.trim();
-  if (vulgarFractions[cleaned]) return vulgarFractions[cleaned];
+  const key = numer.trim() + "/" + denom.trim();
+  if (vulgarFractions[key]) return vulgarFractions[key];
   // fallback: (a)/(b)
   return `(${numer})/(${denom})`;
 }
+function simpleRoot(x: string) {
+  // If simple variable/number, no parentheses; else, wrap
+  if (/^[a-zA-Z0-9⁰¹²³⁴⁵⁶⁷⁸⁹\+\-\*\/\s]+$/.test(x)) return "√" + x;
+  return "√(" + x + ")";
+}
 
-const latexReplacements: [RegExp, string | ((substring: string, ...args: string[]) => string)][] = [
-  // \text{}
+// Main conversion
+const replacements: [RegExp, string | ((...args: string[]) => string)][] = [
+  // \\text{...}
   [/(\\text\s*\{([^}]*)\})/g, (_, __, txt) => txt],
 
-  // \frac{a}{b} ⟶ unicode vulgar fraction or fallback
+  // Fractions
   [/\\frac\{ *([0-9]+) *\}\{ *([0-9]+) *\}/g, (_, num, denom) => toVulgarFraction(num, denom)],
-  // fallback for fractions: (numerator)/(denominator)
+  [/\\frac\{([A-Za-z0-9+\-*/=^ ]+)\}\{([A-Za-z0-9+\-*/=^ ]+)\}/g, (_, num, den) => `(${num})/(${den})`],
+  // fallback for any: (a)/(b)
   [/\\frac\{([^}]*)\}\{([^}]*)\}/g, (_, num, den) => `(${deLatex(num)})/(${deLatex(den)})`],
 
-  // \sqrt{stuff} ⟶ √stuff (no parenthesis if just variable/number)
-  [/\\sqrt\{([^}]*)\}/g, (_, radicand) => {
-    // If radicand is simple (var/number), no need for parens
-    const val = deLatex(radicand.trim());
-    if (/^[a-zA-Z0-9⁰¹²³⁴⁵⁶⁷⁸⁹\+\-\*\/\s]+$/.test(val)) {
-      return `√${val}`;
-    }
-    return `√(${val})`;
-  }],
-
-  // nth roots: \sqrt[n]{x} → ⁿ√x
+  // Square root and nth root
+  [/\\sqrt\{([^}]*)\}/g, (_, r) => simpleRoot(deLatex(r.trim()))],
   [/\\sqrt\[([^\]]+)\]\{([^\}]+)\}/g, (_, n, radicand) => `${toSuperscript(deLatex(n))}√${deLatex(radicand)}`],
 
-  // Superscripts: a^{b}
-  [
-    /([a-zA-Z0-9])\^\{([^}]+)\}/g,
-    (_, base, sup) => {
-      if (/^[0-9+\-()n]+$/.test(sup)) {
-        return base + toSuperscript(sup);
-      }
-      return base + "^" + deLatex(sup);
-    }
-  ],
-  // Simple superscript: a^b
-  [
-    /([a-zA-Z0-9])\^([0-9n+\-\(\)])/g,
-    (_, base, sup) => base + toSuperscript(sup)
-  ],
+  // Superscript (power)
+  [/([a-zA-Z0-9])\^\{([^}]+)\}/g, (_, base, pow) => base + toSuperscript(deLatex(pow))],
+  [/([a-zA-Z0-9])\^([0-9n+\-\(\)])/g, (_, base, pow) => base + toSuperscript(pow)],
 
-  // Subscript: a_{b}
-  [
-    /([a-zA-Z0-9])_\{([^}]+)\}/g,
-    (_, base, sub) => {
-      if (/^[0-9a-z+\-()]+$/.test(sub)) {
-        return base + toSubscript(sub);
-      }
-      return base + "_" + deLatex(sub);
-    }
-  ],
-  // Simple subscript: a_b
-  [
-    /([a-zA-Z0-9])_([0-9a-z])/g,
-    (_, base, sub) => base + toSubscript(sub)
-  ],
+  // Subscript
+  [/([a-zA-Z0-9])_\{([^}]+)\}/g, (_, base, sub) => base + toSubscript(deLatex(sub))],
+  [/([a-zA-Z0-9])_([0-9a-zA-Z])/g, (_, base, sub) => base + toSubscript(sub)],
 
-  // sin, cos, tan, etc.
-  [/\\sin/g, "sin"],
-  [/\\cos/g, "cos"],
-  [/\\tan/g, "tan"],
-  [/\\cot/g, "cot"],
-  [/\\sec/g, "sec"],
-  [/\\csc/g, "csc"],
+  // Vector, hat and overline
+  [/\\vec\{([A-Za-z])\}/g, (_, v) => v + "\u20D7"], // a⃗
+  [/\\vec ([A-Za-z])/g, (_, v) => v + "\u20D7"],
+  [/\\hat\{([A-Za-z])\}/g, (_, v) => v + "\u0302"], // â
+  [/\\bar\{([A-Za-z])\}/g, (_, v) => v + "\u0304"], // ā
 
-  // Greek letters
-  [/\\theta/g, "θ"],
-  [/\\alpha/g, "α"],
-  [/\\beta/g, "β"],
-  [/\\gamma/g, "γ"],
-  [/\\lambda/g, "λ"],
-  [/\\mu/g, "μ"],
-  [/\\pi/g, "π"],
-  [/\\phi/g, "φ"],
-  [/\\rho/g, "ρ"],
-  [/\\sigma/g, "σ"],
-  [/\\Delta/g, "Δ"],
-  [/\\delta/g, "δ"],
-  [/\\Omega/g, "Ω"],
-  [/\\omega/g, "ω"],
+  // Greek letters (add more as needed)
+  [/\\theta/g, "θ"], [/\\Theta/g, "Θ"],
+  [/\\alpha/g, "α"], [/\\beta/g, "β"], [/\\gamma/g, "γ"], [/\\Gamma/g, "Γ"],
+  [/\\lambda/g, "λ"], [/\\mu/g, "μ"],
+  [/\\pi/g, "π"], [/\\phi/g, "φ"],
+  [/\\rho/g, "ρ"], [/\\sigma/g, "σ"],
+  [/\\Delta/g, "Δ"], [/\\delta/g, "δ"],
+  [/\\Omega/g, "Ω"], [/\\omega/g, "ω"],
 
-  // Sum, integral, product
-  [/\\sum/g, "∑"],
-  [/\\int/g, "∫"],
-  [/\\prod/g, "∏"],
-
-  // Infinity
+  // Operators
+  [/\\sum/g, "∑"], [/\\int/g, "∫"], [/\\prod/g, "∏"],
   [/\\infty/g, "∞"],
-
-  // Relations, operators
-  [/\\geq/g, "≥"],
-  [/\\leq/g, "≤"],
-  [/\\neq/g, "≠"],
-  [/\\approx/g, "≈"],
-  [/\\pm/g, "±"],
-  [/\\mp/g, "∓"],
-  [/\\times/g, "×"],
-  [/\\cdot/g, "⋅"],
-  [/\\div/g, "÷"],
-  [/\\degree/g, "°"],
+  [/\\geq/g, "≥"], [/\\leq/g, "≤"], [/\\neq/g, "≠"], [/\\approx/g, "≈"], [/\\pm/g, "±"], [/\\mp/g, "∓"],
+  [/\\times/g, "×"], [/\\cdot/g, "⋅"], [/\\div/g, "÷"], [/\\degree/g, "°"],
 
   // Dots
   [/\\ldots/g, "…"],
 
   // Arrows
-  [/\\rightarrow/g, "→"],
-  [/\\leftarrow/g, "←"],
-  [/\\to/g, "→"],
-  [/\\Rightarrow/g, "⇒"],
-  [/\\Leftarrow/g, "⇐"],
+  [/\\rightarrow/g, "→"], [/\\leftarrow/g, "←"], [/\\to/g, "→"], [/\\Rightarrow/g, "⇒"], [/\\Leftarrow/g, "⇐"],
 
-  // Spaces and newlines
-  [/\\\\/g, " "],
-  [/\\\[/g, ""],
-  [/\\\]/g, ""],
-  [/\\,/g, " "],
-  [/\\ /g, " "],
+  // Trigonometric functions
+  [/\\sin/g, "sin"], [/\\cos/g, "cos"], [/\\tan/g, "tan"], [/\\cot/g, "cot"], [/\\sec/g, "sec"], [/\\csc/g, "csc"],
 
-  // Remove curly braces (that remain after above)
+  // Misc symbols
+  [/\\le/g, "≤"], [/\\ge/g, "≥"],
+
+  // Remove \left, \right, \rm, etc.
+  [/\\left\s*/g, ""], [/\\right\s*/g, ""], [/\\rm\s*/g, ""],
+
+  // Remove braces and double dollar/mathmode markup
   [/\{|\}/g, ""],
-  // Remove dollar (inline math)
-  [/\$/g, ""],
+  [/\$\$?/g, ""],
+
+  // Spaces and newlines (for inline PDFs etc)
+  [/\\\\/g, " "], [/\n/g, " "],
+  [/\\,/g, " "], [/\\ /g, " "],
+
+  // Clean up stray \ or math-mode
+  [/\\ /g, " "]
 ];
 
 export function deLatex(input: string): string {
-  let out = input || "";
-  // Always run multiple passes, as replacement may reveal more LaTeX
-  // Limit to 3 passes to avoid infinite loops
+  if (!input) return "";
+  let out = input;
+  // Repeat a few times to cover nested cases
   for (let i = 0; i < 3; ++i) {
-    latexReplacements.forEach(([regex, replacement]) => {
-      out = out.replace(regex, replacement as any);
+    replacements.forEach(([regex, rep]) => {
+      out = out.replace(regex, rep as any);
     });
   }
-  // Clean up double spaces
-  out = out.replace(/\s\s+/g, " ");
-  return out.trim();
+  return out.replace(/\s\s+/g, " ").trim();
 }
-
