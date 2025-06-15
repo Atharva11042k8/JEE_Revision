@@ -12,7 +12,7 @@ export const SUBJECT_CONFIG = [
     icon: '⚛️',
     chapters: [
       { name: 'Kinematics', file: 'data/physics/kinematics.json' },
-      { name: 'Vectors', file: '//public/formulas/physics/kinematics.json' },
+      { name: 'Vectors', file: '/data/physics/vectors.json' },
       // Add/remove chapters as you like!
     ]
   },
