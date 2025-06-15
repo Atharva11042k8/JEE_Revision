@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -8,6 +7,7 @@ import { toast } from "sonner";
 import { AnimationEngine } from '@/utils/animations';
 import { SUBJECT_CONFIG } from '@/data/subjectConfig';
 import { deLatex } from '@/utils/deLatex';
+import Latex from '@/components/Latex';
 
 // Define formula type (could move to global.d.ts)
 interface Formula {
@@ -244,8 +244,8 @@ const Index = () => {
                 </div>
                 <div className="bg-gray-900/50 rounded-lg p-4 md:p-6 border border-gray-700/50">
                   <div className="text-lg md:text-xl lg:text-2xl text-gray-100 leading-relaxed">
-                    {/* Convert LaTeX to readable text */}
-                    {deLatex(currentFormula.question) || "No question provided."}
+                    {/* Show as proper typeset math with horizontal bar */}
+                    <Latex latex={currentFormula.question} block />
                   </div>
                 </div>
               </div>
@@ -260,7 +260,7 @@ const Index = () => {
                   </div>
                   <div className="bg-gradient-to-r from-green-900/30 to-blue-900/30 rounded-lg p-4 md:p-6 border border-green-500/30">
                     <div className="text-lg md:text-2xl lg:text-3xl text-green-100 leading-relaxed font-mono">
-                      {deLatex(currentFormula.answer) || "No answer provided."}
+                      <Latex latex={currentFormula.answer} block />
                     </div>
                   </div>
                 </div>
