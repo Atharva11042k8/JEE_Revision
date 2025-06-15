@@ -35,24 +35,57 @@ function simpleRoot(x: string) {
   return "√(" + x + ")";
 }
 
+// Helper to find delimiters (pipe |, slash /, etc)
+function splitNumerDenom(str: string): [string, string] | null {
+  // Try pipe first
+  if (str.includes('|')) {
+    const [num, denom] = str.split('|');
+    if (num && denom) return [num, denom];
+  }
+  // Then try slash
+  if (str.includes('/')) {
+    const [num, denom] = str.split('/');
+    if (num && denom) return [num, denom];
+  }
+  return null;
+}
+
 // Main conversion
 const replacements: [RegExp, string | ((...args: string[]) => string)][] = [
   // \\text{...}
   [/(\\text\s*\{([^}]*)\})/g, (_, __, txt) => txt],
 
-  // Fractions
-  // 1. Strict: \frac{a}{b}
-  [/\\frac\{\s*([0-9a-zA-Z\+\-]+)\s*\}\{\s*([0-9a-zA-Z\+\-]+)\s*\}/g, (_, num, denom) => toVulgarFraction(num, denom)],
-  // 2. Strict, general: \frac{something}{denom}
-  [/\\frac\{([^\}]*)\}\{([^\}]*)\}/g, (_, num, den) => `(${deLatex(num)})/(${deLatex(den)})`],
-  // 3. Compact no braces: \frac12 or \fracab
-  [/\\frac([0-9a-zA-Z])([0-9a-zA-Z])/g, (_, num, denom) => toVulgarFraction(num, denom)],
-  // 4. Space-separated: \frac a b
-  [/\\frac\s+([^\s{}]+)\s+([^\s{}]+)/g, (_, num, denom) => toVulgarFraction(num, denom)],
-  // 5. Mixed form: \frac X {Y}
-  [/\\frac\s*([0-9a-zA-Z])\s*\{([^\}]*)\}/g, (_, num, denom) => toVulgarFraction(num, denom)],
-  // 6. Mixed form: \frac {X} Y
-  [/\\frac\s*\{([^\}]*)\}\s*([0-9a-zA-Z])/g, (_, num, denom) => toVulgarFraction(num, denom)],
+  // Fractions: expand support for many forms
+
+  // 1. \frac{a}{b} brace style, digits
+  [/\\frac\s*\{\s*([0-9]+)\s*\}\s*\{\s*([0-9]+)\s*\}/g, (_, num, denom) => toVulgarFraction(num, denom)],
+
+  // 2. \frac{something}{something} (general, recursive)
+  [/\\frac\{([^\}]+)\}\{([^\}]+)\}/g, (_, num, denom) => {
+    return `(${deLatex(num)})/(${deLatex(denom)})`;
+  }],
+
+  // 3. \fracX|Y| OR \fracX/Y
+  [/\\frac([^\s\{\}]+?)[|\/]([^\s\{\}]+)/g, (_, num, denom) => {
+    return `(${deLatex(num)})/(${deLatex(denom)})`;
+  }],
+
+  // 4. \frac ab  (single letter/symbol)
+  [/\\frac\s*([A-Za-z0-9])\s*([A-Za-z0-9])/g, (_, num, denom) => toVulgarFraction(num, denom)],
+
+  // 5. \frac a {b}
+  [/\\frac\s*([A-Za-z0-9])\s*\{\s*([^\}]+)\s*\}/g, (_, num, denom) => toVulgarFraction(num, denom)],
+
+  // 6. \frac{a} b
+  [/\\frac\s*\{\s*([^\}]+)\s*\}\s*([A-Za-z0-9])/g, (_, num, denom) => toVulgarFraction(num, denom)],
+
+  // 7. \frac12, \frac ab (no spaces)
+  [/\\frac([0-9])([0-9])/g, (_, num, denom) => toVulgarFraction(num, denom)],
+
+  // fallback: just attempt to parse anything after \frac (no recursion)
+  [/\\frac([^\s\{\}]+)\s*([^\s\{\}]+)/g, (_, num, denom) => {
+    return `(${deLatex(num)})/(${deLatex(denom)})`;
+  }],
 
   // Square root and nth root
   [/\\sqrt\{([^}]*)\}/g, (_, r) => simpleRoot(deLatex(r.trim()))],
