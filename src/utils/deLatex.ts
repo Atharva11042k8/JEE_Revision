@@ -1,3 +1,4 @@
+
 /**
  * Converts a LaTeX-formatted string into more readable plain text with actual math symbols (², √, ½, Greek, etc).
  */
@@ -35,19 +36,39 @@ function simpleRoot(x: string) {
   return "√(" + x + ")";
 }
 
-// Helper to find delimiters (pipe |, slash /, etc)
-function splitNumerDenom(str: string): [string, string] | null {
-  // Try pipe first
-  if (str.includes('|')) {
-    const [num, denom] = str.split('|');
-    if (num && denom) return [num, denom];
-  }
-  // Then try slash
-  if (str.includes('/')) {
-    const [num, denom] = str.split('/');
-    if (num && denom) return [num, denom];
-  }
-  return null;
+// -- Custom manual \frac parsing logic (robust for your requirements)
+function parseFracAll(str: string): string {
+  if (!str) return "";
+
+  // 1. \frac{A}{B}
+  str = str.replace(/\\frac\s*\{\s*([^\{\}]+)\s*\}\s*\{\s*([^\{\}]+)\s*\}/g, (_, num, denom) =>
+    toVulgarFraction(deLatex(num), deLatex(denom))
+  );
+
+  // 2. \fracA|B| or \fracA/B
+  str = str.replace(/\\frac([A-Za-z0-9\^_\{\}\\\[\]\(\)]+)[|\/]([A-Za-z0-9\^_\{\}\\\[\]\(\)]+)/g, (_, num, denom) =>
+    toVulgarFraction(deLatex(num), deLatex(denom))
+  );
+
+  // 3. \fracAB   (single-character or vector etc)
+  str = str.replace(/\\frac\s*([A-Za-z0-9\u20D7\u0302\u0304])\s*([A-Za-z0-9\u20D7\u0302\u0304])/g, (_, num, denom) =>
+    toVulgarFraction(deLatex(num), deLatex(denom))
+  );
+  str = str.replace(/\\frac([A-Za-z0-9\u20D7\u0302\u0304])([A-Za-z0-9\u20D7\u0302\u0304])/g, (_, num, denom) =>
+    toVulgarFraction(deLatex(num), deLatex(denom))
+  );
+
+  // 4. Fallback: \frac X Y   (space-separated two tokens)
+  str = str.replace(/\\frac\s+([^\s{}]+)\s+([^\s{}]+)/g, (_, num, denom) =>
+    toVulgarFraction(deLatex(num), deLatex(denom))
+  );
+
+  // If any remaining \frac expression, show as (num)/(denom)
+  str = str.replace(/\\frac\s*\{?([^{}\s]+)\}?\s*\{?([^{}\s]+)\}?/g, (_, num, denom) =>
+    `(${deLatex(num)})/(${deLatex(denom)})`
+  );
+
+  return str;
 }
 
 // Main conversion
@@ -55,37 +76,7 @@ const replacements: [RegExp, string | ((...args: string[]) => string)][] = [
   // \\text{...}
   [/(\\text\s*\{([^}]*)\})/g, (_, __, txt) => txt],
 
-  // Fractions: expand support for many forms
-
-  // 1. \frac{a}{b} brace style, digits
-  [/\\frac\s*\{\s*([0-9]+)\s*\}\s*\{\s*([0-9]+)\s*\}/g, (_, num, denom) => toVulgarFraction(num, denom)],
-
-  // 2. \frac{something}{something} (general, recursive)
-  [/\\frac\{([^\}]+)\}\{([^\}]+)\}/g, (_, num, denom) => {
-    return `(${deLatex(num)})/(${deLatex(denom)})`;
-  }],
-
-  // 3. \fracX|Y| OR \fracX/Y
-  [/\\frac([^\s\{\}]+?)[|\/]([^\s\{\}]+)/g, (_, num, denom) => {
-    return `(${deLatex(num)})/(${deLatex(denom)})`;
-  }],
-
-  // 4. \frac ab  (single letter/symbol)
-  [/\\frac\s*([A-Za-z0-9])\s*([A-Za-z0-9])/g, (_, num, denom) => toVulgarFraction(num, denom)],
-
-  // 5. \frac a {b}
-  [/\\frac\s*([A-Za-z0-9])\s*\{\s*([^\}]+)\s*\}/g, (_, num, denom) => toVulgarFraction(num, denom)],
-
-  // 6. \frac{a} b
-  [/\\frac\s*\{\s*([^\}]+)\s*\}\s*([A-Za-z0-9])/g, (_, num, denom) => toVulgarFraction(num, denom)],
-
-  // 7. \frac12, \frac ab (no spaces)
-  [/\\frac([0-9])([0-9])/g, (_, num, denom) => toVulgarFraction(num, denom)],
-
-  // fallback: just attempt to parse anything after \frac (no recursion)
-  [/\\frac([^\s\{\}]+)\s*([^\s\{\}]+)/g, (_, num, denom) => {
-    return `(${deLatex(num)})/(${deLatex(denom)})`;
-  }],
+  // FRACTION HANDLING (handled by parseFracAll below, so this is skipped here)
 
   // Square root and nth root
   [/\\sqrt\{([^}]*)\}/g, (_, r) => simpleRoot(deLatex(r.trim()))],
@@ -150,6 +141,10 @@ const replacements: [RegExp, string | ((...args: string[]) => string)][] = [
 export function deLatex(input: string): string {
   if (!input) return "";
   let out = input;
+
+  // HANDLE ALL \frac FORMS MANUALLY FIRST (before main replacements)
+  out = parseFracAll(out);
+
   // Repeat a few times to cover nested cases
   for (let i = 0; i < 3; ++i) {
     replacements.forEach(([regex, rep]) => {
