@@ -52,12 +52,13 @@ const Index = () => {
     }
   };
 
-  // Fetch formulas for chapter (from data/)
+  // Fetch formulas for chapter (from formulas/)
   const loadChapterFormulas = async (filePath: string) => {
     setLoading(true);
     try {
       let cleanPath = filePath.replace(/^\/+/, ""); // remove any leading slash just in case
-      const response = await fetch(`/data/${cleanPath}`);
+      // FIX: fetch from /formulas instead of /data
+      const response = await fetch(`/formulas/${cleanPath}`);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data: Formula[] = await response.json();
       setFormulas(data);
