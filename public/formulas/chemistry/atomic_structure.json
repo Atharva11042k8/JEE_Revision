@@ -1,35 +1,166 @@
-
 [
   {
-    "question": "Energy of electron in nth orbit (Bohr model)",
-    "answer": "E_n = -\\frac{13.6}{n^2} \\text{ eV}"
+    "question": "who\\;discover\\;e,p,n",
+    "answer": "jj\\;thompson,\\;goldsten,james\\;chadwick"
   },
   {
-    "question": "Radius of nth orbit in hydrogen atom",
-    "answer": "r_n = 0.529 \\times n^2 \\text{ Å}"
+    "question": "em\\;ratio\\;of\\; electron",
+    "answer": "1.76×10¹¹\\;c/kg"
   },
   {
-    "question": "de Broglie wavelength",
-    "answer": "\\lambda = \\frac{h}{mv}"
+    "question": "approx\\;relative\\; atomic\\;mass\\;of\\;e",
+    "answer": "\\frac{1}{1836}"
   },
   {
-    "question": "Heisenberg uncertainty principle",
-    "answer": "\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi}"
+    "question": "approx\\;relative\\; atomic\\;mass\\;of\\;p",
+    "answer": "1"
   },
   {
-    "question": "Rydberg equation for hydrogen spectrum",
-    "answer": "\\frac{1}{\\lambda} = R_H \\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right)"
+    "question": "approx\\;relative\\; atomic\\;mass\\;of\\;n",
+    "answer": "1"
   },
   {
-    "question": "Velocity of electron in nth orbit",
-    "answer": "v_n = \\frac{2.18 \\times 10^6}{n} \\text{ m/s}"
+    "question": "approx\\;relative\\; atomic\\;mass\\;of\\;α",
+    "answer": "4"
   },
   {
-    "question": "Atomic number and mass number relation",
-    "answer": "A = Z + N"
+    "question": "approx\\;relative\\;charge\\;e",
+    "answer": "-1"
   },
   {
-    "question": "Planck's quantum theory",
-    "answer": "E = h\\nu = \\frac{hc}{\\lambda}"
+    "question": "approx\\;relative\\;charge\\;p",
+    "answer": "1"
+  },
+  {
+    "question": "approx\\;relative\\;charge\\;n",
+    "answer": "no\\;charge"
+  },
+  {
+    "question": "approx\\;relative\\;charge\\;α",
+    "answer": "+2"
+  },
+  {
+    "question": "mass\\;of\\;e",
+    "answer": "9.1×10^{-31}\\;kg"
+  },
+  {
+    "question": "mass\\;of\\;p",
+    "answer": "1.673×10^{-27}\\;kg"
+  },
+  {
+    "question": "mass\\;of\\;n",
+    "answer": "1.675×10^{-27}\\;kg"
+  },
+  {
+    "question": "mass\\;of\\;α",
+    "answer": "4×1.67×10^{-27}\\;kg"
+  },
+  {
+    "question": "charge\\;on\\;e",
+    "answer": "-1.69×10^{-19}\\;c"
+  },
+  {
+    "question": "charge\\;on\\;α",
+    "answer": "+2×1.69×10^{-19}\\;c"
+  },
+  {
+    "question": "R_{atom} =?",
+    "answer": "10⁵×R_{nuc}"
+  },
+  {
+    "question": "V_{atom} =?",
+    "answer": "10¹⁵×V_{nuc}"
+  },
+  {
+    "question": "λ=\\frac{c}{f}",
+    "answer": ""
+  },
+  {
+    "question": "acc\\;to\\;planks:\\;E=?",
+    "answer": "E=\\frac{nhc}{λ}\\;or\\;E=\\frac{12400}{λ(Å)}\\;or\\;E=\\frac{1240}{λ(nm)}"
+  },
+  {
+    "question": "acc\\;to\\; photoelectric\\;effect?",
+    "answer": "E=E_{o}+½mv²\\;or\\;hv=hv_{o}+½mv²(in frequency)\\;or\\;\\frac{hc}{λ}=\\frac{hc}{λ_o}+½mv²(wavelength)"
+  },
+  {
+    "question": "angular\\;momentum",
+    "answer": "\\frac{nh}{2π}"
+  },
+  {
+    "question": "Bohr's\\;radius(r):",
+    "answer": "0.529\\frac{n²}{z}"
+  },
+  {
+    "question": "Bohr's\\;velocity(v):",
+    "answer": "2.18×10⁶\\;\\frac{z}{n}"
+  },
+  {
+    "question": "total\\;energy",
+    "answer": "-13.6\\;\\frac{z²}{n²}"
+  },
+  {
+    "question": "total\\;time\\;for\\;one\\;chakkar",
+    "answer": "1.5×10^{-16}\\;\\frac{n³}{z²}"
+  },
+  {
+    "question": "kimetic\\;energy",
+    "answer": "|TE|"
+  },
+  {
+    "question": "∆ke",
+    "answer": "13.6×z²(|\\frac{1}{(n_1)²}-\\frac{1}{(n_2)²}|)"
+  },
+  {
+    "question": "potential\\;energy",
+    "answer": "2×TE"
+  },
+  {
+    "question": "comparison\\;of\\;r",
+    "answer": "\\frac{R_1}{R_2}=(\\frac{n_1}{n_2})²×\\frac{z_2}{z_1}"
+  },
+  {
+    "question": "Heisenberg\\;uncertainty\\;principle",
+    "answer": "∆x.∆p\\;>=\\;\\frac{h}{4π}"
+  },
+  {
+    "question": "acc\\;to\\;de-broglie\\;\\;2πR_n=?\\;and\\;λ=?",
+    "answer": "2πR_n=nλ\\;and\\;λ=\\frac{h}{mc}\\;or\\;\\frac{h}{mv}"
+  },
+  {
+    "question": "no\\;of\\;spectral\\;lines(unique)",
+    "answer": "\\frac{(n_2-n_1)(n_2-n_1+1)}{2}"
+  },
+  {
+    "question": "wave\\;no\\;in\\;hydrogen\\;spectrum",
+    "answer": "v=\\frac{1}{λ}=RHZ²(\\frac{1}{(n_1)²}-\\frac{1}{(n_2)²})"
+  },
+  {
+    "question": "total\\;node",
+    "answer": "n-1"
+  },
+  {
+    "question": "radial/spherical\\;node",
+    "answer": "n-l-1"
+  },
+  {
+    "question": "angular\\;node",
+    "answer": "l"
+  },
+  {
+    "question": "max\\;electron\\;and\\;orbital\\;in\\;n",
+    "answer": "2n²\\;and\\;n²"
+  },
+  {
+    "question": "max\\;electron\\;and\\;orbital\\;in\\;l",
+    "answer": "2(2l+1)\\;and\\;(2l+1)"
+  },
+  {
+    "question": "magnetic\\;moment",
+    "answer": "\\sqrt{n(n+2)}"
+  },
+  {
+    "question":"value of h",
+    "answer":"6.626×10^{-34}"
   }
 ]
