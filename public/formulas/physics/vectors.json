@@ -1,0 +1,75 @@
+[
+    {
+        "question":"\\hat{A}",
+        "answer":"\\frac{\\vec{A}}{|A|}"
+    },
+    {
+        "question":"displacement\\;vector\\;of\\;r_{1}\\;and\\;r_2",
+        "answer":"r_2-r_1"
+    },
+    {
+        "question":"\\text{reasultant of a vector}",
+        "answer":"\\sqrt{\\hat{i^2}+\\hat{j^2}+\\hat{k^2}}"
+    },
+    {
+        "question":"\\vec{A}+\\vec{B}",
+        "answer":"\\sqrt{A^2+B^2+2ABcos(\\theta)}"
+    },
+    {
+        "question":"\\vec{A}-\\vec{B}",
+        "answer":"\\sqrt{A^2+B^2-2ABcos(\\theta)}"
+    },
+    {
+        "question":"tan(\\theta)",
+        "answer":"\\frac{bsin(\\theta)}{a±bcos(\\theta)}"
+    },
+    {
+        "question":"8(\\hat{i}+\\hat{j}+\\hat{k})",
+        "answer":"8\\hat{i}+8\\hat{j}+8\\hat{k})"
+    },
+    {
+        "question":"\\text{component of b in the direction of a}",
+        "answer":"\\text{jiska component nikalna hai usko dot kardo unit vector ke saath jiske direction mai nikalna hai}"
+    },
+    {
+        "question":"\\vec{A}.\\vec{A}",
+        "answer":"A^2"
+    },
+    {
+        "question":"(A_x\\hat{i}+A_y\\hat{j}+A_z\\hat{k}).(B_x\\hat{i}+B_y\\hat{j}+B_z\\hat{k})",
+        "answer":"(A_x.A_x)+((A_y.A_y)+((A_z.A_z)"
+    },
+    {
+        "question":"\\vec{A}.\\vec{B}",
+        "answer":"AB\\:cos(\\theta)"
+    },
+    {
+        "question":"\\vec{A}*\\vec{B}",
+        "answer":"AB\\sin(\\theta)"
+    },
+    {
+        "question":"\\text{how to solve cross product}",
+        "answer":"\\text{discriminant}"
+    },
+    {
+        "question":"\\vec{A}*\\vec{A}",
+        "answer":"0"
+    },
+    {
+        "question":"\\hat{i}*\\hat{i}",
+        "answer":"0"
+    },
+    {
+        "question":"\\hat{i}*\\hat{j}",
+        "answer":"\\hat{k}"
+    },
+    {
+        "question":"\\text{sine law}",
+        "answer":"\\frac{sin(\\alpha)}{a}=\\frac{sin(\\beta)}{b}=\\frac{sin(\\gamma)}{c}"
+    },
+    {
+        "question":"direction\\;cosine",
+        "answer":"1=cos^2(\\alpha)+cos^2(\\beta)+cos^2(\\gamma)"
+    }
+    
+]

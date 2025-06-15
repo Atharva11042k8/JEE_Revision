@@ -1,0 +1,246 @@
+[
+    {
+        "question":"\\text{surface tension(s)=?}",
+        "answer":"s=\\frac{L}{L}"
+    },
+    {
+        "question":"\\text{for soup solution s=?}",
+        "answer":"s=2s"
+    },
+    {
+        "question":"\\text{force acts on ring due to S.T}",
+        "answer":"mg\\:+\\:4\\pi rs"
+    },
+    {
+        "question":"\\text{force acts on disk due to S.T}",
+        "answer":"mg\\:+\\:2\\pi rs"
+    },
+    {
+        "question":"\\text{force acts on anullar ring due to S.T}",
+        "answer":"mg\\:+\\:2\\pi s(r_1+r_2)"
+    },
+    {
+        "question":"\\text{force acts on rectrangular plate due to S.T}",
+        "answer":"mg\\:+\\:2s(a+b)"
+    },
+    {
+        "question":"\\text{force acts on wire or thin rod due to S.T}",
+        "answer":"f = 2sl"
+    },
+    {
+        "question":"\\text{surface energy(E)=?}",
+        "answer":"E=SA"
+    },
+    {
+        "question":"\\text{surface energy(E) for drop}",
+        "answer":"E=s.4\\pi r^2"
+    },
+    {
+        "question":"\\text{surface energy(E) for bubble}",
+        "answer":"E=2\\times s.4\\pi r^2"
+    },
+    {
+        "question":"\\text{surface energy(E) for soap bubble}",
+        "answer":"E=2\\times 2s.4\\pi r^2"
+    },
+    {
+        "question":"\\text{work done?}",
+        "answer":"E=SA"
+    },
+    {
+        "question":"cos(\\theta)\\;when\\;drop\\;is\\;droped\\;on\\;surface",
+        "answer":"cos(\\theta)=\\frac{T_2-T_1}{T_3}"
+    },
+    {
+        "question":"Δp\\;in\\;liquid\\;drop",
+        "answer":"p_{concave}=p_{convex}+\\frac{2S}{R}\\;or\\;p_{inside}=p_{outside}+\\frac{2S}{R}"
+    },
+    {
+        "question":"Δ p\\;in\\;soap\\;bubble",
+        "answer":"p_{inside}=p_{outside}+\\frac{4S}{R}"
+    },
+    {
+        "question":"NOTE:\\;if\\;2\\;surface(bubble)->\\;Δp=\\frac{4S}{R}.\\;and\\;if\\;1\\;surface(drop)->\\;Δp=\\frac{2S}{R}",
+        "answer":""
+    },
+    {
+        "question":"\\text{air bubble inside liquid a liqid}",
+        "answer":"p_i=p_a+\\rho gh+\\frac{2s}{R}"
+    },
+    {
+        "question":"\\text{height in capillary rise}",
+        "answer":"h=\\frac{2Scos(\\theta)}{r\\rho g}"
+    },
+    {
+        "question":"\\text{when 2 bubble collapse externally,R=?}",
+        "answer":"R=\\frac{r_1r_2}{r_2-r_1}"
+    },
+    {
+        "question":"\\text{when 2 bubble collapse internally,R=?}",
+        "answer":"R=\\frac{r_1r_2}{r_2+r_1}"
+    },
+    {
+        "question":"\\text{force requires to seperate glass plates}",
+        "answer":"F=\\frac{2SAcos(\\theta)}{d}"
+    },
+    {
+        "question":"\\text{specific gravity or relative density}",
+        "answer":"\\frac{\\rho_{fluid}}{\\rho_{water}}"
+    },
+    {
+        "question":"\\text{effect of temperature on density}",
+        "answer":"\\frac{△\\rho}{\\rho}\\;=\\;\\frac{-\\rho△T}{(1+\\rho△T)}"
+    },
+    {
+        "question":"1\\;atm\\;=\\;?",
+        "answer":"1.01\\times 10^5\\;pa\\;=\\;760mm\\:of\\:Hg\\;=\\;76\\:cm\\;of\\;Hg\\;=\\;760\\;tor\\;=\\;10.3\\:m\\:of\\:water\\;=\\;1\\:bar"
+    },
+    {
+        "question":"\\text{pressure at depth h}",
+        "answer":"△P\\;=\\;\\rho g h"
+    },
+    {
+        "question":"\\text{error in mercury barometer}",
+        "answer":"\\frac{2s}{r}"
+    },
+    {
+        "question":"\\text{hydrolic lift}",
+        "answer":"\\frac{F_1}{A_1}\\;=\\;\\frac{F_2}{A_2}"
+    },
+    {
+        "question":"\\text{according to pascal law:}",
+        "answer":"\\text{pressure constant at same height}"
+    },
+    {
+        "question":"\\text{in mercury manometer }p_{atm}\\;=\\;?}",
+        "answer":"\\rho g h"
+    },
+    {
+        "question":"\\text{in barometer p_{gas}=?}",
+        "answer":"p_{atm}+\\rho g h"
+    },
+    {
+        "question":"\\text{absolut and gauge pressure}",
+        "answer":"p_{absolute}\\;=\\;p_o+\\rho g h \\;\\;,p_{gauge}\\;=\\;\\rho g h"
+    },
+    {
+        "question":"\\text{hydrostatic force on horizontal surface}",
+        "answer":"F\\;=\\;(p_o+\\rho g h)ab"
+    },
+    {
+        "question":"\\text{hydrostatic force on inclined plane}",
+        "answer":"F\\;=\\;\\frac{\\rho g cos(\\theta)ab(2l+a)}{2}"
+    },
+    {
+        "question":"\\text{hydrostatic force on vertical surface}",
+        "answer":"p_{avrage}.\\times area"
+    },
+    {
+        "question":"torque_{net}\\;is\\;zero\\;at}",
+        "answer":"\\frac{L}{3}\\;from\\;bottom"
+    },
+    {
+        "question":"\\tau_{net}\\;about\\;center\\;and\\;base",
+        "answer":"\\tau\\;=\\;\\frac{\\rho g b h^3}{6}(about\\:center)\\;,\\;\\tau\\;=\\;\\frac{\\rho g b h^3}{3}(about\\:base)"
+    },
+    {
+        "question":"\\text{free surface is always perpinducalar to }g_{eff} \\;i.e\\;\\sqrt{g^2+a^2}",
+        "answer":""
+    },
+    {
+        "question":"\\text{fluid in motion wrt to container: △P}",
+        "answer":"\\rho g_{eff} h"
+    },
+    {
+        "question":"\\text{fluid in motion wrt to container: }tan(\\theta)",
+        "answer":"tan(\\theta)\\;=\\;\\frac{a}{g}"
+    },
+    {
+        "question":"buyonce\\;force\\;=\\;?",
+        "answer":"\\rho_{liquid}v g\\;[v=volume\\;displace]"
+    },
+    {
+        "question":"\\text{△h in U-tube if accelerated with acceleration with a}",
+        "answer":"△h;=\\;\\frac{aL}{g}"
+    },
+    {
+        "question":"\\text{△P in tube at any two }points(x_1,x_2)\\text{ if rotated with }ω",
+        "answer":"△P\\;=\\;\\frac{1}{2}\\rho ω^2(x_2{}^2-x_1{}^2)"
+    },
+    {
+        "question":"\\text{△h in U-tube if rotated with ω at any axis perpindicular}",
+        "answer":"△h\\;=\\;\\frac{1}{2}\\frac{ω^2}{g}(L_2{}^2-L_1{}^1)"
+    },
+    {
+        "question":"\\text{mass flow rate}",
+        "answer":"\\text{mass flow rate = }\\frac{dm}{dt}\\;or\\;area\\times velocity \\times \\rho"
+    },
+    {
+        "question":"\\text{volume flow rate}",
+        "answer":"\\text{mass flow rate = }\\frac{dv}{dt}\\;or\\;area\\times velocity"
+    },
+    {
+        "question":"\\text{eqution of continuity}",
+        "answer":"A_1V_1=A_2V_2 {\\text{product of AV of aane wale = product of jane wale}}"
+    },
+    {
+        "question":"\\text{bernoulis equation}",
+        "answer":"p+\\rho g h +\\frac{1}{2}\\rho v^2 =\\;constant"
+    },
+    {
+        "question":"\\text{pressure head,kinetic head,potential head}",
+        "answer":"\\text{divide bernoulis by }\\rho g"
+    },
+    {
+        "question":"\\text{note: loss in pressure energy per unit volume = gain in kinetic energy per unit volume}",
+        "answer":""
+    },
+    {
+        "question":"\\text{velocity comming out of tank is:}",
+        "answer":"v\\;=\\;\\sqrt{2gh}"
+    },
+    {
+        "question":"\\text{range of water}",
+        "answer":"R\\;=\\;2\\sqrt{h(H-h)}\\;\\;[\\text{h is from top}]"
+    },
+    {
+        "question":"\\text{time taken for emptying a tank}",
+        "answer":"t\\;=\\;\\frac{A_1}{A_2}\\sqrt{\\frac{2(H-h)}{g}}\\;\\;[\\text{h is from top}]"
+    },
+    {
+        "question":"\\text{range max at}",
+        "answer":"\\frac{H}{2}"
+    },
+    {
+        "question":"\\text{thrust in fluid}",
+        "answer":"2\\rho g h A"
+    },
+    {
+        "question":"\\text{equation of parabolide}",
+        "answer":"y\\;=\\;\\frac{x^2ω^2}{2g}"
+    },
+    {
+        "question":"\\text{viscous force F:}",
+        "answer":"F\\;=\\;ɳA(\\frac{dv}{dx})"
+    },
+    {
+        "question":"\\text{poiseuille equation:  flow rate thru narrow tube}",
+        "answer":"\\frac{dv}{dt}\\;=\\;\\frac{\\pi r^4}{8ɳL}(p_1-p_2)"
+    },
+    {
+        "question":"\\text{stokes law}",
+        "answer":"F_v\\;=\\;6\\pi ɳ rv"
+    },
+    {
+        "question":"terminal\\;velocity",
+            "answer":"v_max\\;=\\;\\frac{2r^2\\rho g}{9ɳ}\\;\\;for\\;water\\;v_max\\;=\\;\\frac{2r^2g}{9ɳ}(\\rho_2-\\rho_1)"
+    },
+    {
+        "question":"critical\\;velocity",
+        "answer":"v_c\\;=\\;\\frac{R_nɳ}{\\rho d}"
+    },
+    {
+        "question":"\\text{state of wate if }R_n \\text{ less than greater then}",
+        "answer":""
+    }
+]

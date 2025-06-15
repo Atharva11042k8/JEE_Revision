@@ -1,0 +1,87 @@
+[
+    {
+        "question":"\\text{angular displacement}",
+        "answer":""
+    },
+    {
+        "question":"\\text{angular velocity}",
+        "answer":""
+    },
+    {
+        "question":"\\text{angular acceleration}",
+        "answer":""
+    },
+    {
+        "question":"\\text{1 revolution\\;= ?}",
+        "answer":"2\\pi\\;rad"
+    }
+    ,
+    {
+        "question":"\\omega\\;=\\;?",
+        "answer":"\\frac{2\\pi}{T}"
+    },
+    {
+        "question":"x\\;rpm\\;=\\;?",
+        "answer":"x.\\frac{2\\pi}{60}\\;\\frac{rad}{sec}"
+    },
+    {
+        "question":"\\text{relative velocity}",
+        "answer":"\\text{perpendicular velocity components ka substraction/addition of both the velocities}"
+    },
+    {
+        "question":"\\text{centripetel acceleration}",
+        "answer":"a_c\\;=\\;\\frac{v^2}{r}\\;or\\;a_c\\;=\\;r\\omega{}^2"
+    },
+    {
+        "question":"\\text{tangential acceleration}",
+        "answer":"\\frac{dv}{dt}"
+    },
+    {
+        "question":"a_{net}\\;and\\;tan(\\theta)",
+        "answer":"\\sqrt{{a_c}^2+{a_t}^2}\\;and\\;tan(\\theta)=\\frac{a_t}{a_c}"
+    },
+    {
+        "question":"\\text{centeripital force}",
+        "answer":"F_c\\;=\\;\\frac{mv^2}{r}\\;or\\;mr{\\omega}^2"
+    },
+    {
+        "question":"\\text{tangential force}",
+        "answer":"F_t=mr\\alpha"
+    },
+    {
+        "question":"\\text{radius of curvature}",
+        "answer":"r_a=\\frac{v^2}{a_c}\\;or\\;r_a\\;=\\;\\frac{(1+(\\frac{dy}{dx})^2)^{\\frac{3}{2}}}{|\\frac{d^2y}{dx^2}|}(then\\;put\\;x,y)"
+    },
+    {
+        "question":"\\text{vehical on a circulr track min speed}",
+        "answer":"v=\\sqrt{µrg}"
+    },
+    {
+        "question":"\\text{wall of death min speed}",
+        "answer":"v=\\sqrt{\\frac{rg}{µ}}"
+    },
+    {
+        "question":"\\text{conical pendilum ka time period and velocity}",
+        "answer":"t=2\\pi\\sqrt{\\frac{l\\:cos(\\theta)}{g}}\\;and\\;\\omega=\\sqrt{\\frac{g\\:tan(\\theta)}{r}}"
+    },
+    {
+        "question":"\\text{vehical on a banked road without friction}",
+        "answer":"v=\\sqrt{rg\\:tan(\\theta)}"
+    },
+    {
+        "question":"\\text{vehical on a banked road with friction max speed}",
+        "answer":"v_{max}\\;=\\;\\sqrt{rg[\\frac{tan(\\theta)+µ}{1-µ\\:tan(\\theta)}]}"
+    },
+    {
+        "question":"\\text{vehical on a banked road with friction min speed}",
+        "answer":"v_{min}\\;=\\;\\sqrt{rg[\\frac{tan(\\theta)-µ}{1+µ\\:tan(\\theta)}]}"
+    },
+    {
+        "question":"\\text{partical on verticular motion,velocity at bottom,top and at midpoint}",
+        "answer":"v_b\\sqrt{5gr},\\;v_m\\sqrt{3gr},v_t\\sqrt{gr}"
+    },
+    {
+        "question":"\\text{partical on verticular motion, velocity at any point,and point at which contact looses}",
+        "answer":"v=\\sqrt{u^2+2gr(1-cos(\\theta)},\\;cos(\\theta)=\\frac{u^2+2gr}{3gr}"
+    }
+]

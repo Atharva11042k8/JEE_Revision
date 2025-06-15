@@ -1,0 +1,126 @@
+[
+    {
+        "question":"\\text{universal law of gravitation}",
+        "answer":"F\\;=\\frac{\\;Gm_1m_2}{R^2}"
+    },
+    {
+        "question":"\\text{universal law of gravitation vectorially}",
+        "answer":"F\\;=\\frac{\\;Gm_1m_2}{R^3}.\\vec{R}"
+    },
+    {
+        "question":"\\text{mass of earth}",
+        "answer":"5.97\\times10^{24}kg"
+    },
+    {
+        "question":"\\text{radius of earth}",
+        "answer":"6400km"
+    },
+    {
+        "question":"\\text{accelaeration due to gravity at height}",
+        "answer":"g_h\\;=\\;\\frac{GM}{(R+h)^2}\\;or\\;g_h\\;=\\;g_s(1-\\frac{2h}{R})"
+    },
+    {
+        "question":"\\text{accelaeration due to gravity at depth}",
+        "answer":"g_d\\;=\\;\\frac{g_sr}{R}\\;or\\;g_d\\;=\\;g_s(1-\\frac{d}{R})"
+    },
+    {
+        "question":"\\text{varition in g due to rotation}",
+        "answer":"g\\prime\\;=\\;g-R\\omega^2cos^2(\\theta)"
+    },
+    {
+        "question":"\\text{gravitational field}",
+        "answer":"\\vec{E}\\;=\\;\\frac{\\vec{F}}{m}\\;or\\;\\vec{E}\\;=\\;\\frac{Gm}{R^2}"
+    },
+    {
+        "question":"\\text{gravitational field due to rod}",
+        "answer":"\\vec{E}\\;=\\;\\frac{GM}{a(L+a)}"
+    },
+    {
+        "question":"\\text{gravitational field due to ring}",
+        "answer":"\\vec{E}\\;=\\;\\frac{GMx}{(R^2+x^2)^{\\frac{3}{2}}}"
+    },
+    {
+        "question":"\\text{gravitational field due to hollow sphere(inside,outside,at surface)}",
+        "answer":"\\vec{E}_{in}=zero\\;,\\;\\vec{E}_{surface}=\\frac{Gm}{R^2}\\,\\vec{E}_{out}=\\frac{Gm}{r^2}"
+    },
+    {
+        "question":"\\text{gravitational field due to solid sphere(inside,outside,at surface)}",
+        "answer":"\\vec{E}_{in}=\\frac{Gmr}{R^3}\\;,\\;\\vec{E}_{surface}=\\frac{Gm}{R^2}\\;,\\vec{E}_{out}=\\frac{Gm}{r^2}"
+    },
+    {
+        "question":"\\text{gravitational field due to infinite long wire}",
+        "answer":"g\\;=\\;\\frac{2G\\lambda}{r}"
+    },
+    {
+        "question":"\\text{gravitational potential(V)}",
+        "answer":"V\\;=\\;-\\frac{GM}{r}"
+    },
+    {
+        "question":"\\text{gravitational potential due to ring}",
+        "answer":"-\\frac{GM}{\\sqrt{R^2+x^2}}"
+    },
+    {
+        "question":"\\text{gravitational potential due to hollow sphere(inside,outside,at surface)}",
+        "answer":"v_{in}\\;=\\;-\\frac{GM}{R}\\;,\\;v_{sur}\\;=\\;-\\frac{GM}{R}\\;,\\;v_{out}\\;=\\;-\\frac{GM}{r}"
+    },
+    {
+        "question":"\\text{gravitational potential due to solid sphere(inside,outside,at surface)}",
+        "answer":"v_{in}\\;=\\;-\\frac{3GM}{2R}[1-\\frac{r^2}{3R^2}]\\;or\\;\\frac{GM(3R^2-r^2)}{2R^3}\\;,\\;v_{sur}\\;=\\;-\\frac{GM}{R}\\;,\\;v_{out}\\;=\\;-\\frac{GM}{r}"
+    },
+    {
+        "question":"\\text{relation betwen gravi. field and gravi. potential}",
+        "answer":"E\\;=\\;-\\frac{dv}{dr}\\;or\\;v\\;=\\;-\\int E.dr"
+    },
+    {
+        "question":"\\text{gravitational potential energy}",
+        "answer":"U\\;=\\;-\\frac{GM_1M_2}{r}"
+    },
+    {
+        "question":"\\text{self gravitational potential energy of sphere(hollow,solid)}",
+        "answer":"U_{hollow}\\;=\\;\\frac{1}{2}\\frac{GM^2}{R}\\;and\\;U_{solid}\\;=\\;\\frac{3}{5}\\frac{GM^2}{R}"
+    },
+    {
+        "question":"\\text{escape velocity}",
+        "answer":"V_e\\;=\\;\\sqrt{\\frac{2GM}{R}}"
+    },
+    {
+        "question":"\\text{orbital velocity}",
+        "answer":"V_o\\;=\\;\\sqrt{\\frac{GM}{r}}"
+    },
+    {
+        "question":"\\text{time period of a satellite}",
+        "answer":"t\\;=\\;\\frac{2\\pi R^{\\frac{3}{2}}}{\\sqrt{GM}}"
+    },
+    {
+        "question":"\\text{kinetic energy of a satellite}",
+        "answer":"KE\\;=\\;\\frac{GMm}{2r}"
+    },
+    {
+        "question":"\\text{potential energy of a satellite}",
+        "answer":"PE\\;=\\;-\\frac{GMm}{r}"
+    },
+    {
+        "question":"\\text{total energy of a satellite}",
+        "answer":"TE\\;=\\;-\\frac{GMm}{2r}"
+    },
+    {
+        "question":"\\text{height of geo-stationary satellite}",
+        "answer":"3600\\;km"
+    },
+    {
+        "question":"\\text{height of polar-stationary satellite}",
+        "answer":"500-800\\;km"
+    },
+    {
+        "question":"\\text{according to keplers 2nd law dA/dt=?}",
+        "answer":"\\frac{L}{2m}"
+    },
+    {
+        "question":"{\\frac{2π}{24×60×60}}^2\\;=\\;?",
+        "answer":"5.29×10^{-9}"
+    },
+    {
+        "question":"6400×{\\frac{2π}{24×60×60}}^2\\;=\\;?",
+        "answer":"3.39×10^{-5}"
+    }
+]
