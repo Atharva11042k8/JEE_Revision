@@ -67,7 +67,7 @@
 
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js')
+    navigator.serviceWorker.register('service-worker.ts')
       .then(reg => console.log('[SW] Registered:', reg.scope))
       .catch(err => console.error('[SW] Registration failed:', err));
   }
