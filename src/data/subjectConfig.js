@@ -8,7 +8,7 @@ export const SUBJECT_CONFIG = [
       { name: 'Calculus', file: 'physics/calculus.json' },
       { name: 'Kinematics', file: 'physics/kinematics.json' },
       { name: 'NLM', file: 'physics/nlm.json' },
-      { name: 'Circular Motion', file: 'physics/circular_motion.json' },
+      { name: 'Circular Motion', file: 'physics/circular-motion.json' },
       { name: 'Work, Power, Energy', file: 'physics/work_power_energy.json' },
       { name: 'Center of Mass', file: 'physics/center_of_mass.json' },
       { name: 'Rotation', file: 'physics/rotation.json' },
