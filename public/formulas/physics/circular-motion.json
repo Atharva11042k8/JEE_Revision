@@ -83,5 +83,9 @@
     {
         "question":"\\text{partical on verticular motion, velocity at any point,and point at which contact looses}",
         "answer":"v=\\sqrt{u^2+2gr(1-cos(\\theta)},\\;cos(\\theta)=\\frac{u^2+2gr}{3gr}"
+    },
+    {
+        "question":"\\text{in vertical circular motion if a mass m is attached to massless rod then velocity at bottom point}",
+        "answer":"v=\\sqrt{4gr}"
     }
 ]
