@@ -154,10 +154,10 @@ const Index = () => {
             ref={titleRef}
             className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-green-400 bg-clip-text text-transparent mb-4 font-mono"
           >
-            JEE Formula Master
+            ATHARVA the ENCODER
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-4">
-            Ultimate Revision Tool for Physics, Chemistry & Mathematics
+            JEE revision app: by @atharvahadke11
           </p>
         </div>
 
@@ -305,10 +305,10 @@ const Index = () => {
           <div className="text-center py-16">
             <div className="text-4xl md:text-6xl mb-6">🎯</div>
             <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-300 mb-4">
-              Ready to Master JEE Formulas?
+              AIR 11
             </h3>
             <p className="text-gray-400 text-base md:text-lg max-w-md mx-auto px-4">
-              Select a subject and chapter to start your formula revision journey!
+              Select a subject and chapter to start revision
             </p>
           </div>
         )}
