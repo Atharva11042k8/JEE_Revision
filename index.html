@@ -54,4 +54,43 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9cIax56Z4dCRWbxyPt0" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0" crossorigin="anonymous"></script>
   </body>
+
+
+
+
+
+
+
+
+
+
+  
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(reg => console.log('Service worker registered.', reg))
+      .catch(err => console.error('Service worker registration failed:', err));
+  }
+
+  // Optional: Prompt to install PWA
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    const installPrompt = e;
+    // You can trigger installPrompt.prompt() after a button click or other logic
+    console.log('Install prompt captured');
+  });
+</script>
+
+
+
+
+  
+
+
+
+
+
+
+
 </html>
