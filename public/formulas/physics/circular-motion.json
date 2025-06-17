@@ -78,7 +78,7 @@
     },
     {
         "question":"\\text{partical on verticular motion,velocity at bottom,top and at midpoint}",
-        "answer":"v_b\\sqrt{5gr},\\;v_m\\sqrt{3gr},v_t\\sqrt{gr}"
+        "answer":"v_b=\\sqrt{5gr},\\;v_m=\\sqrt{3gr},v_t=\\sqrt{gr}"
     },
     {
         "question":"\\text{partical on verticular motion, velocity at any point,and point at which contact looses}",
