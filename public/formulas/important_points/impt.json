@@ -12,7 +12,7 @@
     "answer":"1\\;erg\\;=\\;10^{-7}j"
   },
   {
-    "question":"distance of centroid from midoint of edges equilateral triangle and distance of centriod to vertex",
+    "question":"text{distance of centroid from midoint of edges equilateral triangle and distance of centriod to vertex}",
     "answer":"\\frac{1}{2\\sqrt{3}}a\\;\\;\\;and v\\;ertex \\;ka\\;\\frac{2}{3}h"
   },
   {
@@ -28,11 +28,11 @@
     "answer":"\\frac{4}{3}\\pi r^3"
   },
   {
-    "question":"\\{area of sphere}",
+    "question":"\\text{area of sphere}",
     "answer":"4\\pi r^2"
   },
   {
-    "question":"1rpm\\;=\\;__ rad/s",
+    "question":"1rpm\\;=\\; __ rad/s",
     "answer":"1rpm\\;=\\; \\frac{2\\pi}{60} rad/s"
   },
   {
