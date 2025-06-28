@@ -58,8 +58,27 @@
   {
     "question":"\\text{1 nano meter = ?}",
     "answer":"10^-9 meters"
-  }
-  ,
+  },
+  {
+    "question":"\\text{area of a sector}",
+    "answer":"\\frac{r²\\theta}{2} \\; \\theta =radians"
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
   {
     "question":"",
     "answer":""
