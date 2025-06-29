@@ -240,7 +240,7 @@ const Index = () => {
                     Question
                   </Badge>
                   <span className="text-gray-400 text-sm md:text-base">
-                    Formula {shownIndices.length} of {formulas.length}
+                    
                   </span>
                 </div>
                 <div className="bg-gray-900/50 rounded-lg p-4 md:p-6 border border-gray-700/50">
