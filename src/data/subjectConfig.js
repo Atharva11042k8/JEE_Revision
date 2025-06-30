@@ -10,7 +10,7 @@ export const SUBJECT_CONFIG = [
       { name: 'NLM', file: 'physics/nlm.json' },
       { name: 'Circular Motion', file: 'physics/circular-motion.json' },
       { name: 'Work, Power, Energy', file: 'physics/work_power_energy.json' },
-      { name: 'Center of Mass', file: 'physics/center_of_mass.json' },
+      { name: 'Center of Mass', file: 'physics/COM.json' },
       { name: 'Rotation', file: 'physics/rotation.json' },
       { name: 'Gravitation', file: 'physics/gravitation.json' },
       { name: 'Heat', file: 'physics/heat.json' },
