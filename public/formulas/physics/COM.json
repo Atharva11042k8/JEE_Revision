@@ -24,39 +24,39 @@
         "answer":"\\frac{4R}{3\\pi}"
     },
     {
-        "question":"//text{COM of annular semi circular ring}",
-        "answer":"//frac{4}{3\\pi}(//frac{r^3_2-r^3_1}{r^2_2-r^2_1})"
+        "question":"\\text{COM of annular semi circular ring}",
+        "answer":"\\frac{4}{3\\pi}(\\frac{r^3_2-r^3_1}{r^2_2-r^2_1})"
     },
     {
-        "question":"//text{COM of arc of a ring}",
-        "answer":"//frac{2R}{\\theta}sin(//frac{\\theta}{2})"
+        "question":"\\text{COM of arc of a ring}",
+        "answer":"\\frac{2R}{\\theta}sin(\\frac{\\theta}{2})"
     },
     {
-        "question":"//text{COM of sector of a plate}",
-        "answer":"//frac{R sin(\\theta)}{3\\theta}"
+        "question":"\\text{COM of sector of a plate}",
+        "answer":"\\frac{R sin(\\theta)}{3\\theta}"
     },
     {
-        "question":"//text{COM of solid cone}",
-        "answer":"//frac{3h}{r}\\;(from\\;apex)"
+        "question":"\\text{COM of solid cone}",
+        "answer":"\\frac{3h}{r}\\;(from\\;apex)"
     },
     {
-        "question":"//text{COMhollow cone}",
-        "answer":"//frac{2h}{3}\\;(from\\;apex)"
+        "question":"\\text{COMhollow cone}",
+        "answer":"\\frac{2h}{3}\\;(from\\;apex)"
     },
     {
-        "question":"//text{COM of solid hemisphere}",
-        "answer":"//frac{3R}{8}"
+        "question":"\\text{COM of solid hemisphere}",
+        "answer":"\\frac{3R}{8}"
     },
     {
-        "question":"//text{COM of hollow hemisphere}",
-        "answer":"//frac{R}{2}"
+        "question":"\\text{COM of hollow hemisphere}",
+        "answer":"\\frac{R}{2}"
     },
     {
-        "question":"//text{COM of tringular lamina}",
-        "answer":"//text{at centroid}"
+        "question":"\\text{COM of tringular lamina}",
+        "answer":"\\text{at centroid}"
     },
     {
-        "question":"//text{V_{com}",
+        "question":"\\text{V_{com}",
         "answer":""
     },
     {
@@ -72,15 +72,15 @@
         "answer":""
     },
     {
-        "question":"//text{value of e}",
-        "answer":"//frac{v_2-v_1}{u_1-u_2}"
+        "question":"\\text{value of e}",
+        "answer":"\\frac{v_2-v_1}{u_1-u_2}"
     },
     {
-        "question":"//text{aagar e ≠ 1 then kinetic energy loss hogi after collision .}K_{loss}=?",
-        "answer":"K_{loss}\\;=\\;\\frac{1}{2}(//frac{m_1m_2}{m_1+m_2})U_{rel}^{2}(1-e^2)"
+        "question":"\\text{aagar e ≠ 1 then kinetic energy loss hogi after collision .}K_{loss}=?",
+        "answer":"K_{loss}\\;=\\;\\frac{1}{2}(\\frac{m_1m_2}{m_1+m_2})U_{rel}^{2}(1-e^2)"
     },
     {
-        "question":"//text{thrust force}",
-        "answer":"F\\;=\\;v_{rel}//frac{dm}{dt}\\;(\\text{where }//frac{dm}{dt}//text{ is mass ejection rate})"
+        "question":"\\text{thrust force}",
+        "answer":"F\\;=\\;v_{rel}\\frac{dm}{dt}\\;(\\text{where }\\frac{dm}{dt}\\text{ is mass ejection rate})"
     }
 ]
