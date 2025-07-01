@@ -1,7 +1,7 @@
 [
     {
         "question":"\\text{surface tension(s)=?}",
-        "answer":"s=\\frac{L}{L}"
+        "answer":"s=\\frac{F}{L}"
     },
     {
         "question":"\\text{for soup solution s=?}",
