@@ -49,6 +49,7 @@ export const SUBJECT_CONFIG = [
       { name: 'Circles', file: 'mathematics/circles.json' },
       { name: 'Functions', file: 'mathematics/functions.json' },
       { name: 'Inverse Trig Functions', file: 'mathematics/itf.json' },
+      { name: 'parabola', file:'mathematics/parabola.json'},
     ]
   },
   {
