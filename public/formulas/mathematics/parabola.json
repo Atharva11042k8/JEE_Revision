@@ -1,1 +1,138 @@
-txt
+[
+    {
+        "question":"//text{condition for parabola}",
+        "answer":"△≠o;\\;h ^{2}=ab"
+    },
+    {
+        "question":"//text{locus of parabola}",
+        "answer":"//text{dist from line and point is equal}"
+    },
+    {
+        "question":"//text{focus}",
+        "answer":""
+    },
+    {
+        "question":"//text{directrix}",
+        "answer":""
+    },
+    {
+        "question":"//text{foot of directrix}",
+        "answer":""
+    },
+    {
+        "question":"//text{vertex}",
+        "answer":""
+    },
+    {
+        "question":"//text{focal radius}",
+        "answer":""
+    },
+    {
+        "question":"//text{direct radiys}",
+        "answer":""
+    },
+    {
+        "question":"//text{axis}",
+        "answer":""
+    },
+    {
+        "question":"//text{parametric coordinates for y^{2}=4ax",
+        "answer":"(at ^{2},2at)"
+    },
+    {
+        "question":"//text{length of focal radius as t}",
+        "answer":"|a|(1+t^{2})"
+    },
+    {
+        "question":"//text{double ordinate}",
+        "answer":"//text{chord perpindicular to axis}"
+    },
+    {
+        "question":"//text{length of focal chord as t}",
+        "answer":"|a|{(t+//frac{1}{t})}^2"
+    },
+    {
+        "question":"//text{LR}",
+        "answer":""
+    },
+    {
+        "question":"//text{eqn of}",
+        "answer":""
+    },
+    {
+        "question":"//text{equation od chord(p(t_1,t_2))}",
+        "answer":"2x+2at_1t_2=y(t_1+t_2)"
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"",
+        "answer":""
+    },
+    {
+        "question":"hey chatgpt i want a detailed prompt to explain an ai about my next project : i want a portfolio website for myself which contsins some information about me , my project(whenever someone click on project card it redirect to given link),buy me a coffe section etc. but i want an super intresting and extraordinary website that is ",
+        "answer":""
+    }
+]
