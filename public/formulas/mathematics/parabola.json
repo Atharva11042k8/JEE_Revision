@@ -1,7 +1,7 @@
 [
     {
         "question":"//text{condition for parabola}",
-        "answer":"△≠o;\\;h ^{2}=ab"
+        "answer":"△≠o;\\;h^{2}=ab"
     },
     {
         "question":"//text{locus of parabola}",
@@ -28,8 +28,8 @@
         "answer":""
     },
     {
-        "question":"//text{direct radiys}",
-        "answer":""
+        "question":"//text{direct radius}",
+        "answer":"//text{distance of any point from directrix}"
     },
     {
         "question":"//text{axis}",
@@ -37,7 +37,11 @@
     },
     {
         "question":"//text{parametric coordinates for y^{2}=4ax",
-        "answer":"(at ^{2},2at)"
+        "answer":"(at^{2},2at)"
+    },
+    {
+        "question": "//text{parametric coordinates for x^{2}=4ay",
+        "answer": "(2at,at^{2})"
     },
     {
         "question":"//text{length of focal radius as t}",
@@ -48,6 +52,10 @@
         "answer":"//text{chord perpindicular to axis}"
     },
     {
+        "question": "//text{relation betwen ends of focal chord}",
+        "answer": "t_1t_2 = -1"
+    },
+    {
         "question":"//text{length of focal chord as t}",
         "answer":"|a|{(t+//frac{1}{t})}^2"
     },
@@ -56,56 +64,64 @@
         "answer":""
     },
     {
-        "question":"//text{eqn of}",
-        "answer":""
+        "question":"//text{equations of double ordinate}",
+        "answer":"x-at^2=0:"
     },
     {
         "question":"//text{equation od chord(p(t_1,t_2))}",
         "answer":"2x+2at_1t_2=y(t_1+t_2)"
     },
     {
-        "question":"",
+        "question":"//text{slope of tangent drawn at (at^2,2at)}",
+        "answer":"m=//frac{1}{t}"
+    },
+    {
+        "question": "//text{slope of tangent drawn at (2at,at²)}",
+        "answer": "m=t"
+    },
+    {
+        "question":"//text{position of a point wrt parabola}",
+        "answer":"//text{put point of parabola}"
+    },
+    {
+        "question":"//text{condition for tangency}",
+        "answer":"c=//frac{a}{m}"
+    },
+    {
+        "question": "//text{condition for normal",
+        "answer": "c=-2am-am³"
+    },
+    {
+        "question":"//text{equations of tangent in slope form(for both)}",
+        "answer":"y=mx+a//frac{a}{m}//:and//:y=mx-am²"
+    },
+    {
+        "question":"//text{equations of tangent in point form(for both)}",
+        "answer":"yy_1=2a(x+x_1)//; and//;xx_1=2a(y+y_1)"
+    },
+    {
+        "question":"//text{equations of tangent in parametric form(for both)}",
+        "answer":"yt=x+at²//;and//;xt=y+at²"
+    },
+    {
+        "question":"//text{point of contact of tangent and parabola (for both)}",
+        "answer":"(//frac{a}{m²},//frac{2a}{m})//;and//;(2am,am²)"
+    },
+    {
+        "question":"//text{equations of normal in slope form(for both)}",
+        "answer":"y=mx-2am-am³//;and//;yx+2a+//frac{a}{m²}"
+    },
+    {
+        "question":"//text{equations of normal in parametric form(for both)}",
+        "answer":"y=-xt+2at+at³//; and//;y=-//frac{1}{t}x+2at+at²"
+    },
+    {
+        "question":"remaining",
         "answer":""
     },
     {
-        "question":"",
-        "answer":""
-    },
-    {
-        "question":"",
-        "answer":""
-    },
-    {
-        "question":"",
-        "answer":""
-    },
-    {
-        "question":"",
-        "answer":""
-    },
-    {
-        "question":"",
-        "answer":""
-    },
-    {
-        "question":"",
-        "answer":""
-    },
-    {
-        "question":"",
-        "answer":""
-    },
-    {
-        "question":"",
-        "answer":""
-    },
-    {
-        "question":"",
-        "answer":""
-    },
-    {
-        "question":"",
-        "answer":""
+        "question":"//text{point of contact of normal and parabola (for both)}",
+        "answer":"(am²,-2am)\\;and//;(-//frac{2a}{m},//frac{a}{m²})"
     },
     {
         "question":"",
