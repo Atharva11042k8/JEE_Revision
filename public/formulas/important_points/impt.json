@@ -61,7 +61,7 @@
   },
   {
     "question":"\\text{area of a sector}",
-    "answer":"\\frac{r²\\theta}{2} \\; \\theta =radians"
+    "answer":"\\frac{r²\\theta}{2} \\; (\\theta =radians)"
   },
   {
     "question":"\\text{effictive mass or charge}",
