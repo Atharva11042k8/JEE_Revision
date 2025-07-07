@@ -68,7 +68,7 @@
     "answer":"\\frac{m_1m_2}{m_1+m_2}\\;,\\;\\frac{q_1q_2}{q_1+q_2}"
   },
   {
-    "question":"\\text{expansion of a^n-b^n}",
+    "question":"\\text{expansion of }a^n-b^n",
     "answer":"(a-b)(a^{n-1}b^0+a^{n-2}b¹+......+a^0bⁿ)"
   },
   {
