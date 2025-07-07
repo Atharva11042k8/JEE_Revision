@@ -32,8 +32,8 @@
     "answer":"4\\pi r^2"
   },
   {
-    "question":"1rpm\\;=\\; __ rad/s",
-    "answer":"1rpm\\;=\\; \\frac{2\\pi}{60} rad/s"
+    "question":"1rpm\\; = \\; x \\; rad/s",
+    "answer":"1rpm\\; = \\; \\frac{2\\pi}{60} rad/s"
   },
   {
     "question":"(-2x+3)^2\\;=\\;-1^2(2x-3)^2\\;\\;i.e\\text{powers mai power ke saath common aata hai}",
