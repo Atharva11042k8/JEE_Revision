@@ -1,0 +1,78 @@
+[
+  {
+    "question":"//text{locus of ellipse}",
+    "answer":"dist from a line and point is constant and less than 1"
+  },
+  {
+    "question":"//{focus of ellipse(for both)}",
+    "answer":"(±ae,o),(o,±be)"
+  },
+  {
+    "question":"//text{foot of directrix (for both)}",
+    "answer":"(±//frac{a}{e},0),(0,±//frac{b}{e})"
+  },
+  {
+    "question":"//text{vertices(for both)}",
+    "answer":"(±a,0),(0,±b)"
+  },
+  {
+    "question":"//text{equations of parabola}",
+    "answer":"//frac{x²}{a²}+//frac{y²}{b²}=1"
+  },
+  {
+    "question":"//text{equations of directrix}",
+    "answer":"x=±ae\\;,\\;y=±be"
+  },
+  {
+    "question":"//text{ordonate and double ordinate}",
+    "answer":""
+  },
+  {
+    "question":"//text{lenth of LR}",
+    "answer":"//frac{2b²}{a}"
+  },
+  {
+    "question":"//text{sum of focal distances is}",
+    "answer":"2a"
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  }
+]
