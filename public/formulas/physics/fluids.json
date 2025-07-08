@@ -112,11 +112,11 @@
         "answer":"\\text{pressure constant at same height}"
     },
     {
-        "question":"\\text{in mercury manometer }p_{atm}\\;=\\;?}",
+        "question":"\\text{in mercury manometer }p_{atm}\\;=\\;?",
         "answer":"\\rho g h"
     },
     {
-        "question":"\\text{in barometer p_{gas}=?}",
+        "question":"\\text{in barometer }p_{gas}=?",
         "answer":"p_{atm}+\\rho g h"
     },
     {
