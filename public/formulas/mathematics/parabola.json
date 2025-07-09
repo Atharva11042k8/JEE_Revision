@@ -1,154 +1,190 @@
 [
     {
-        "question":"//text{condition for parabola}",
+        "question":"\\text{condition for parabola}",
         "answer":"△≠o;\\;h^{2}=ab"
     },
     {
-        "question":"//text{locus of parabola}",
-        "answer":"//text{dist from line and point is equal}"
+        "question":"\\text{locus of parabola}",
+        "answer":"\\text{dist from line and point is equal}"
     },
     {
-        "question":"//text{focus}",
+        "question":"\\text{focus}",
         "answer":""
     },
     {
-        "question":"//text{directrix}",
+        "question":"\\text{directrix}",
         "answer":""
     },
     {
-        "question":"//text{foot of directrix}",
+        "question":"\\text{foot of directrix}",
         "answer":""
     },
     {
-        "question":"//text{vertex}",
+        "question":"\\text{vertex}",
         "answer":""
     },
     {
-        "question":"//text{focal radius}",
+        "question":"\\text{focal radius}",
         "answer":""
     },
     {
-        "question":"//text{direct radius}",
-        "answer":"//text{distance of any point from directrix}"
+        "question":"\\text{direct radius}",
+        "answer":"\\text{distance of any point from directrix}"
     },
     {
-        "question":"//text{axis}",
+        "question":"\\text{axis}",
         "answer":""
     },
     {
-        "question":"//text{parametric coordinates for y^{2}=4ax",
+        "question":"\\text{parametric coordinates for y^{2}=4ax",
         "answer":"(at^{2},2at)"
     },
     {
-        "question": "//text{parametric coordinates for x^{2}=4ay",
+        "question": "\\text{parametric coordinates for x^{2}=4ay",
         "answer": "(2at,at^{2})"
     },
     {
-        "question":"//text{length of focal radius as t}",
+        "question":"\\text{length of focal radius as t}",
         "answer":"|a|(1+t^{2})"
     },
     {
-        "question":"//text{double ordinate}",
-        "answer":"//text{chord perpindicular to axis}"
+        "question":"\\text{double ordinate}",
+        "answer":"\\text{chord perpindicular to axis}"
     },
     {
-        "question": "//text{relation betwen ends of focal chord}",
+        "question": "\\text{relation betwen ends of focal chord}",
         "answer": "t_1t_2 = -1"
     },
     {
-        "question":"//text{length of focal chord as t}",
-        "answer":"|a|{(t+//frac{1}{t})}^2"
+        "question":"\\text{length of focal chord as t}",
+        "answer":"|a|{(t+\\frac{1}{t})}^2"
     },
     {
-        "question":"//text{LR}",
+        "question":"\\text{LR}",
         "answer":""
     },
     {
-        "question":"//text{equations of double ordinate}",
+        "question":"\\text{equations of double ordinate}",
         "answer":"x-at^2=0:"
     },
     {
-        "question":"//text{equation od chord(p(t_1,t_2))}",
+        "question":"\\text{equation od chord(p(t_1,t_2))}",
         "answer":"2x+2at_1t_2=y(t_1+t_2)"
     },
     {
-        "question":"//text{slope of tangent drawn at (at^2,2at)}",
-        "answer":"m=//frac{1}{t}"
+        "question":"\\text{slope of tangent drawn at (at^2,2at)}",
+        "answer":"m=\\frac{1}{t}"
     },
     {
-        "question": "//text{slope of tangent drawn at (2at,at²)}",
+        "question": "\\text{slope of tangent drawn at (2at,at²)}",
         "answer": "m=t"
     },
     {
-        "question":"//text{position of a point wrt parabola}",
-        "answer":"//text{put point of parabola}"
+        "question":"\\text{position of a point wrt parabola}",
+        "answer":"\\text{put point of parabola}"
     },
     {
-        "question":"//text{condition for tangency}",
-        "answer":"c=//frac{a}{m}"
+        "question":"\\text{condition for tangency}",
+        "answer":"c=\\frac{a}{m}"
     },
     {
-        "question": "//text{condition for normal",
+        "question": "\\text{condition for normal",
         "answer": "c=-2am-am³"
     },
     {
-        "question":"//text{equations of tangent in slope form(for both)}",
-        "answer":"y=mx+a//frac{a}{m}//:and//:y=mx-am²"
+        "question":"\\text{equations of tangent in slope form(for both)}",
+        "answer":"y=mx+a\\frac{a}{m}\\:and\\:y=mx-am²"
     },
     {
-        "question":"//text{equations of tangent in point form(for both)}",
-        "answer":"yy_1=2a(x+x_1)//; and//;xx_1=2a(y+y_1)"
+        "question":"\\text{equations of tangent in point form(for both)}",
+        "answer":"yy_1=2a(x+x_1)\\; and\\;xx_1=2a(y+y_1)"
     },
     {
-        "question":"//text{equations of tangent in parametric form(for both)}",
-        "answer":"yt=x+at²//;and//;xt=y+at²"
+        "question":"\\text{equations of tangent in parametric form(for both)}",
+        "answer":"yt=x+at²\\;and\\;xt=y+at²"
     },
     {
-        "question":"//text{point of contact of tangent and parabola (for both)}",
-        "answer":"(//frac{a}{m²},//frac{2a}{m})//;and//;(2am,am²)"
+        "question":"\\text{point of contact of tangent and parabola (for both)}",
+        "answer":"(\\frac{a}{m²},\\frac{2a}{m})\\;and\\;(2am,am²)"
     },
     {
-        "question":"//text{equations of normal in slope form(for both)}",
-        "answer":"y=mx-2am-am³//;and//;yx+2a+//frac{a}{m²}"
+        "question":"\\text{equations of normal in slope form(for both)}",
+        "answer":"y=mx-2am-am³\\;and\\;yx+2a+\\frac{a}{m²}"
     },
     {
-        "question":"//text{equations of normal in parametric form(for both)}",
-        "answer":"y=-xt+2at+at³//; and//;y=-//frac{1}{t}x+2at+at²"
+        "question":"\\text{equations of normal in parametric form(for both)}",
+        "answer":"y=-xt+2at+at³\\; and\\;y=-\\frac{1}{t}x+2at+at²"
     },
     {
         "question":"remaining",
         "answer":""
     },
     {
-        "question":"//text{point of contact of normal and parabola (for both)}",
-        "answer":"(am²,-2am)\\;and//;(-//frac{2a}{m},//frac{a}{m²})"
+        "question":"\\text{point of contact of normal and parabola (for both)}",
+        "answer":"(am²,-2am)\\;and\\;(-\\frac{2a}{m},\\frac{a}{m²})"
     },
     {
-        "question":"",
+        "question":"\\text{tangents drawn at end points of focal chord are perpendicular}",
         "answer":""
     },
     {
-        "question":"",
+        "question":"\\text{muttual perpendicular tangents(y^{2}=4ax) meet on directrix}",
         "answer":""
     },
     {
-        "question":"",
+        "question":"\\text{equation of chord(y^{2}=4ax)}",
+        "answer":"\\frac{y-y_1}{x-x_1}=\\frac{4a}{y-y_1}\\;\\;and\\;\\frac{y-y_1}{x-x_1}=\\frac{2a}{y_{mid}}"
+    },
+    {
+        "question":"\\text{relstion btwn t_1 and t_2 if normal at t_1 meets the parabola again at t_2}",
+        "answer":"t_1+t_2=-\\frac{2}{t_1}"
+    },
+    {
+        "question":"\\text{if normal at t_1 and t_2 meet the parabola(y^{2}=4ax) at same point then }",
+        "answer":"t_1t_2 = 2"
+    },
+    {
+        "question":"\\text{if 3 points are conormal then }",
+        "answer":"m_1+m_2+m_3 = 0\\;and\\;t_1+t_2+t_3 = 0\\;and\\;\\text{sum of y coordinates}=0"
+    },
+    {
+        "question":"remaining",
         "answer":""
     },
     {
-        "question":"",
+        "question":"\\text{equation of coc}",
+        "answer":"yy_1=2a(x+x_1)\\; and\\;xx_1=2a(y+y_1)"
+    },
+    {
+        "question":"\\text{condition for concyclicity}",
+        "answer":"t_1+t_2+t_3+t_4 = 0"
+    },
+    {
+        "question":"\\text{area of triangle formed by 3 points on parabolais is twice the area of triangle formed by their tangents}",
         "answer":""
     },
     {
-        "question":"",
+        "question":"\\text{equation of diameter}",
+        "answer":"yy_1=2a(x+x_1)\\; and\\;xx_1=2a(y+y_1)"
+    },
+    {
+        "question":"\\text{point of intersection of two tangents}",
+        "answer":"(at_1t_2,2a(t_1+t_2)))"
+    },
+    {
+        "question":"\\text{point of intersection of two normals}",
+        "answer":"(a[2+t_1^2+t_2^2+t_1t_2],-at_1t_2(t_1+t_2))"
+    },
+    {
+        "question":"//text{the foot of the perpendicular from focus to any tangent lies on the tangent at the vertex}",
         "answer":""
     },
     {
-        "question":"",
+        "question":"//text{the tangent and normal at a point p bisect the angle btwn focal radius of p and abscissa of p}",
         "answer":""
     },
     {
-        "question":"hey chatgpt i want a detailed prompt to explain an ai about my next project : i want a portfolio website for myself which contsins some information about me , my project(whenever someone click on project card it redirect to given link),buy me a coffe section etc. but i want an super intresting and extraordinary website that is ",
+        "question":"//text{if the tangent at p and q meets at poiny t then ST^2 =SP.SQ}",
         "answer":""
     }
 ]
