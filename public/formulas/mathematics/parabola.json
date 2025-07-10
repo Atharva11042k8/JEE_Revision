@@ -36,11 +36,11 @@
         "answer":""
     },
     {
-        "question":"\\text{parametric coordinates for y^{2}=4ax",
+        "question":"\\text{parametric coordinates }for\\;y^{2}=4ax",
         "answer":"(at^{2},2at)"
     },
     {
-        "question": "\\text{parametric coordinates for x^{2}=4ay",
+        "question": "\\text{parametric coordinates for }x^{2}=4ay",
         "answer": "(2at,at^{2})"
     },
     {
@@ -68,11 +68,11 @@
         "answer":"x-at^2=0:"
     },
     {
-        "question":"\\text{equation od chord(p(t_1,t_2))}",
+        "question":"\\text{equation of chord }(p(t_1,t_2))",
         "answer":"2x+2at_1t_2=y(t_1+t_2)"
     },
     {
-        "question":"\\text{slope of tangent drawn at (at^2,2at)}",
+        "question":"\\text{slope of tangent drawn at }(at^2,2at)",
         "answer":"m=\\frac{1}{t}"
     },
     {
@@ -88,7 +88,7 @@
         "answer":"c=\\frac{a}{m}"
     },
     {
-        "question": "\\text{condition for normal",
+        "question": "\\text{condition for normal}",
         "answer": "c=-2am-am³"
     },
     {
@@ -128,15 +128,15 @@
         "answer":""
     },
     {
-        "question":"\\text{muttual perpendicular tangents(y^{2}=4ax) meet on directrix}",
+        "question":"\\text{muttual perpendicular tangents }(y^{2}=4ax)\\text{ meet on directrix}",
         "answer":""
     },
     {
-        "question":"\\text{equation of chord(y^{2}=4ax)}",
+        "question":"\\text{equation of chord}(y^{2}=4ax)",
         "answer":"\\frac{y-y_1}{x-x_1}=\\frac{4a}{y-y_1}\\;\\;and\\;\\frac{y-y_1}{x-x_1}=\\frac{2a}{y_{mid}}"
     },
     {
-        "question":"\\text{relstion btwn t_1 and t_2 if normal at t_1 meets the parabola again at t_2}",
+        "question":"\\text{relstion btwn }t_1\\;and\\;t_2\\text{ if normal at }t_1\\text{ meets the parabola again at }t_2",
         "answer":"t_1+t_2=-\\frac{2}{t_1}"
     },
     {
@@ -184,7 +184,7 @@
         "answer":""
     },
     {
-        "question":"\\text{if the tangent at p and q meets at poiny t then ST^2 =SP.SQ}",
+        "question":"\\text{if the tangent at p and q meets at poiny t then }ST^2 =SP.SQ",
         "answer":""
     }
 ]
