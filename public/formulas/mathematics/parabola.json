@@ -140,7 +140,7 @@
         "answer":"t_1+t_2=-\\frac{2}{t_1}"
     },
     {
-        "question":"\\text{if normal at t_1 and t_2 meet the parabola(y^{2}=4ax) at same point then }",
+        "question":"\\text{if normal at }t_1\\;and\\;t_2\\text{ meet the parabola }(y^{2}=4ax)\\text{at same point then }",
         "answer":"t_1t_2 = 2"
     },
     {
@@ -176,15 +176,15 @@
         "answer":"(a[2+t_1^2+t_2^2+t_1t_2],-at_1t_2(t_1+t_2))"
     },
     {
-        "question":"//text{the foot of the perpendicular from focus to any tangent lies on the tangent at the vertex}",
+        "question":"\\text{the foot of the perpendicular from focus to any tangent lies on the tangent at the vertex}",
         "answer":""
     },
     {
-        "question":"//text{the tangent and normal at a point p bisect the angle btwn focal radius of p and abscissa of p}",
+        "question":"\\text{the tangent and normal at a point p bisect the angle btwn focal radius of p and abscissa of p}",
         "answer":""
     },
     {
-        "question":"//text{if the tangent at p and q meets at poiny t then ST^2 =SP.SQ}",
+        "question":"\\text{if the tangent at p and q meets at poiny t then ST^2 =SP.SQ}",
         "answer":""
     }
 ]
