@@ -85,79 +85,30 @@
     "answer":"asinθx-bcosθy=sinθcosθ(a^2-b^2)"
   },
   {
-    "question":"//text{point of contact of normal and ellipse}",
-    "answer":"(±//frac{a^2}{//sqrt{a^2+b^2m^2}},±//frac{b^2}{//sqrt{a^2+b^2m^2}})"
+    "question":"\\text{point of contact of normal and ellipse}",
+    "answer":"(\\frac{a^2}\\sqrt{a^2+b^2m^2}},\\frac{b^2}\\sqrt{a^2+b^2m^2}})"
   },
   {
-    "question":"//text{equation of chord point form}",
-    "answer":"//frac{(x-x_1)(x_1+x_2)}{a^2}+//frac{(y-y_1)(y_1+y_2)}{b^2}=0"
+    "question":"\\text{equation of chord point form}",
+    "answer":"\\frac{(x-x_1)(x_1+x_2)}{a^2}\\frac{(y-y_1)(y_1+y_2)}{b^2}=0"
   },
   {
-    "question":"//text{equation of chord point form(midpoint given)}",
-    "answer":"//frac{xx_{mid}}{a^2}+//frac{yy_{mid}}{b^2}=//frac{(x_{mid})^2}{a^2}+//frac{(y_{mid})^2}{b^2}"
+    "question":"\\text{equation of chord point form(midpoint given)}",
+    "answer":"\\frac{xx_{mid}}{a^2}\\frac{yy_{mid}}{b^2}\\frac{(x_{mid})^2}{a^2}\\frac{(y_{mid})^2}{b^2}"
   },
   {
-    "question":"//text{slopes of tangent normal chord baki hai}",
+    "question":"\\text{slopes of tangent normal chord baki hai}",
     "answer":""
   },
   {
-    "question":"//text{equation of chord parametric form}",
-    "answer":"//frac{}{}"
+    "question":"\\text{equation of chord parametric form}",
+    "answer":"\\frac{y-bsinθ_1}{x-cosθ_1}=\\frac{-b}{a}cot(\\frac{θ_1+θ_2}{2})"
   },
   {
-    "question":"",
-    "answer":""
+    "question":"\\text{equation of coc}",
+    "answer":"\\frac{xx_1}{a^2}+\\frac{yy_1}{b^2}=1"
   },
   {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
+    "question":"\\text{equation of polar}",
+    "answer":"\\frac{xx_1}{a^2}+\\frac{yy_1}{b^2}=1"
   }
-]
