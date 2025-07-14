@@ -1,39 +1,124 @@
+
 [
   {
-    "question":"//text{locus of ellipse}",
+    "question":"\\text{locus of ellipse}",
     "answer":"dist from a line and point is constant and less than 1"
   },
   {
-    "question":"//{focus of ellipse(for both)}",
+    "question":"\\text{eccentricity}",
+    "answer":"dist from a line and point is constant and less than 1"
+  },
+  {
+    "question":"\\{focus of ellipse(for both)}",
     "answer":"(±ae,o),(o,±be)"
   },
   {
-    "question":"//text{foot of directrix (for both)}",
-    "answer":"(±//frac{a}{e},0),(0,±//frac{b}{e})"
+    "question":"\\text{foot of directrix (for both)}",
+    "answer":"(±\\frac{a}{e},0),(0,±\\frac{b}{e})"
   },
   {
-    "question":"//text{vertices(for both)}",
+    "question":"\\text{vertices(for both)}",
     "answer":"(±a,0),(0,±b)"
   },
   {
-    "question":"//text{equations of parabola}",
-    "answer":"//frac{x²}{a²}+//frac{y²}{b²}=1"
+    "question":"\\text{equations of parabola}",
+    "answer":"\\frac{x²}{a²}+\\frac{y²}{b²}=1"
   },
   {
-    "question":"//text{equations of directrix}",
+    "question":"\\text{equations of directrix}",
     "answer":"x=±ae\\;,\\;y=±be"
   },
   {
-    "question":"//text{ordonate and double ordinate}",
+    "question":"\\text{ordinate and double ordinate}",
     "answer":""
   },
   {
-    "question":"//text{lenth of LR}",
-    "answer":"//frac{2b²}{a}"
+    "question":"\\text{length of LR(for both)}",
+    "answer":"\\frac{2b²}{a}\\;,\\;\\frac{2a²}{b}"
   },
   {
-    "question":"//text{sum of focal distances is}",
+    "question":"\\text{sum of focal distances is}",
     "answer":"2a"
+  },
+  {
+    "question":"\\text{focal distance}",
+    "answer":"(a±ex,0),(0,b±ey)"
+  },
+  {
+    "question":"\\text{parametric coordinates for parabola}",
+    "answer":"x=a.cosθ\\;,\\;y=b.sinθ"
+  },
+  {
+    "question":"\\text{condition for tangent}",
+    "answer":"c=± \\sqrt{a^2m^2+b^2}"
+  },
+  {
+    "question":"\\text{equations of tangent point form(p(x_1,y_1))}",
+    "answer":"\\frac{xx_1}{a^2}+\\frac{yy_1}{b^2}=1"
+  },
+  {
+    "question":"\\text{equations of tangent slope form}",
+    "answer":"y=mx± \\sqrt{a^2m^2+b^2}"
+  },
+  {
+    "question":"\\text{equations of tangent parametric form}",
+    "answer":"\\frac{xcosθ}{a}+\\frac{ysinθ}{b}=1"
+  },
+  {
+    "question":"\\text{point of contact of tangent and ellipse}",
+    "answer":""
+  },
+  {
+    "question":"\\text{equations of director circle}",
+    "answer":"x^2+y^2=a^2+b^2"
+  },
+  {
+    "question":"\\text{equations of normal point form}",
+    "answer":"\\frac{y-y_1}{x-y_1}=\\frac{y_1a^2}{x_2b^2}"
+  },
+  {
+    "question":"\\text{equations of normal slope form}",
+    "answer":"y=mx± \\frac{m(b^2-a^2)}{\\sqrt{b^2m^2+a^2}}"
+  },
+  {
+    "question":"\\text{equations of normal parametric form}",
+    "answer":"asinθx-bcosθy=sinθcosθ(a^2-b^2)"
+  },
+  {
+    "question":"//text{point of contact of normal and ellipse}",
+    "answer":"(±//frac{a^2}{//sqrt{a^2+b^2m^2}},±//frac{b^2}{//sqrt{a^2+b^2m^2}})"
+  },
+  {
+    "question":"//text{equation of chord point form}",
+    "answer":"//frac{(x-x_1)(x_1+x_2)}{a^2}+//frac{(y-y_1)(y_1+y_2)}{b^2}=0"
+  },
+  {
+    "question":"//text{equation of chord point form(midpoint given)}",
+    "answer":"//frac{xx_{mid}}{a^2}+//frac{yy_{mid}}{b^2}=//frac{(x_{mid})^2}{a^2}+//frac{(y_{mid})^2}{b^2}"
+  },
+  {
+    "question":"//text{slopes of tangent normal chord baki hai}",
+    "answer":""
+  },
+  {
+    "question":"//text{equation of chord parametric form}",
+    "answer":"//frac{}{}"
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
   },
   {
     "question":"",
