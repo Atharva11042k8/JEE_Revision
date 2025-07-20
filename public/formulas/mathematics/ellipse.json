@@ -2,7 +2,7 @@
 [
   {
     "question":"\\text{locus of ellipse}",
-    "answer":"\\text{dist from a line and point is constant and less than 1}"
+    "answer":"dist from a line and point is constant and less than 1"
   },
   {
     "question":"\\text{eccentricity}",
@@ -66,7 +66,11 @@
   },
   {
     "question":"\\text{point of contact of tangent and ellipse}",
-    "answer":""
+    "answer":"(± \\frac{a^2m}{\\sqrt{a^2m^2+b^2}},±\\frac{b^2}{\\sqrt{a^2m^2+b^2}})"
+  },
+  {
+    "question":"\\text{point of contact of normal and ellipse}",
+    "answer":"(± \\frac{a^2}{\\sqrt{b^2m^2+a^2}},±\\frac{b^2m}{\\sqrt{b^2m^2+a^2}})"
   },
   {
     "question":"\\text{equations of director circle}",
@@ -82,34 +86,78 @@
   },
   {
     "question":"\\text{equations of normal parametric form}",
-    "answer":"asinθx-bcosθy=sinθcosθ(a^2-b^2)"
-  },
-  {
-    "question":"\\text{point of contact of normal and ellipse}",
-    "answer":"(\\frac{a^2}\\sqrt{a^2+b^2m^2}},\\frac{b^2}\\sqrt{a^2+b^2m^2}})"
+    "answer":"axsinθ-bycosθ=sinθcosθ(a^2-b^2)"
   },
   {
     "question":"\\text{equation of chord point form}",
-    "answer":"\\frac{(x-x_1)(x_1+x_2)}{a^2}\\frac{(y-y_1)(y_1+y_2)}{b^2}=0"
+    "answer":"\\frac{(x-x_1)(x_1+x_2)}{a^2}+\\frac{(y-y_1)(y_1+y_2)}{b^2}=0"
   },
   {
     "question":"\\text{equation of chord point form(midpoint given)}",
-    "answer":"\\frac{xx_{mid}}{a^2}\\frac{yy_{mid}}{b^2}\\frac{(x_{mid})^2}{a^2}\\frac{(y_{mid})^2}{b^2}"
+    "answer":"\\frac{xx_{mid}}{a^2}+\\frac{yy_{mid}}{b^2}=\\frac{(x_{mid})^2}{a^2}+\\frac{(y_{mid})^2}{b^2}"
   },
   {
-    "question":"\\text{slopes of tangent normal chord baki hai}",
+    "question":"\\text{slopes of tangent, normal,chord baki hai}",
     "answer":""
   },
   {
     "question":"\\text{equation of chord parametric form}",
-    "answer":"\\frac{y-bsinθ_1}{x-cosθ_1}=\\frac{-b}{a}cot(\\frac{θ_1+θ_2}{2})"
+    "answer":"\\frac{y-b\\:sinθ_1}{x-a\\:cosθ_1}=-\\frac{b}{a}cot(\\frac{θ_1+θ_2}{2})"
   },
   {
     "question":"\\text{equation of coc}",
     "answer":"\\frac{xx_1}{a^2}+\\frac{yy_1}{b^2}=1"
   },
   {
-    "question":"\\text{equation of polar}",
+    "question":"\\text{polar of a pole}",
     "answer":"\\frac{xx_1}{a^2}+\\frac{yy_1}{b^2}=1"
+  },
+  {
+    "question":"\\text{condition for line }xcosɑ+ysinɑ=p \\text{ to be tangent}",
+    "answer":"p^2=a^2cos^2ɑ+b^sin^2ɑ"
+  },
+  {
+    "question":"\\text{equation of diameter}",
+    "answer":"y= \\frac{-b^2}{a^2m}x"
+  },
+  {
+    "question":"\\text{in conjugate diameter :product of slopes}",
+    "answer":"-\\frac{b^2}{a^2}"
+  },
+  {
+    "question":"a^2e^2=a^2-b^2",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
+  },
+  {
+    "question":"",
+    "answer":""
   }
 ]
