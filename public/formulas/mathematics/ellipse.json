@@ -9,7 +9,7 @@
     "answer":"dist from a line and point is constant and less than 1"
   },
   {
-    "question":"\\{focus of ellipse(for both)}",
+    "question":"\\text{focus of ellipse(for both)}",
     "answer":"(±ae,o),(o,±be)"
   },
   {
@@ -21,7 +21,7 @@
     "answer":"(±a,0),(0,±b)"
   },
   {
-    "question":"\\text{equations of parabola}",
+    "question":"\\text{equations of ellipse}",
     "answer":"\\frac{x²}{a²}+\\frac{y²}{b²}=1"
   },
   {
@@ -53,7 +53,7 @@
     "answer":"c=± \\sqrt{a^2m^2+b^2}"
   },
   {
-    "question":"\\text{equations of tangent point form(p(x_1,y_1))}",
+    "question":"\\text{equations of tangent point form}(p(x_1,y_1))",
     "answer":"\\frac{xx_1}{a^2}+\\frac{yy_1}{b^2}=1"
   },
   {
@@ -114,7 +114,7 @@
   },
   {
     "question":"\\text{condition for line }xcosɑ+ysinɑ=p \\text{ to be tangent}",
-    "answer":"p^2=a^2cos^2ɑ+b^sin^2ɑ"
+    "answer":"p^2=a^2cos^2ɑ+b^2sin^2ɑ"
   },
   {
     "question":"\\text{equation of diameter}",
@@ -126,38 +126,6 @@
   },
   {
     "question":"a^2e^2=a^2-b^2",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
-    "answer":""
-  },
-  {
-    "question":"",
     "answer":""
   }
 ]
