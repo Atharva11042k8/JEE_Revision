@@ -37,7 +37,7 @@ export const SUBJECT_CONFIG = [
     name: 'Mathematics',
     icon: '📐',
     chapters: [
-      { name: 'Trigo Ratio', file: 'mathematics/trigo_ratio.json' },
+      { name: 'Trigo Ratio', file: 'mathematics/trigonometry.json' },
       { name: 'Quadratic', file: 'mathematics/quadratic.json' },
       { name: 'Trigo Equation', file: 'mathematics/trigo_eqn.json' },
       { name: 'Inequalities', file: 'mathematics/inequalities.json' },
