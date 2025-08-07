@@ -57,7 +57,8 @@ export const SUBJECT_CONFIG = [
     name: 'Important Points',
     icon: '⭐',
     chapters: [
-      { name: 'Important Points', file: 'important_points/impt.json' }
+      { name: 'Important Points', file: 'important_points/impt.json' },
+      { name: 'name reactions', file: 'important_points/namerxn' }
     ]
   }
 ];
