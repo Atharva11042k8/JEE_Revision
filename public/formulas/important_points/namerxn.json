@@ -1,0 +1,82 @@
+[
+  {
+    "question":"\\text{Clemmensen Reduction}",
+    "answer":"\\text{R-CO-R → Alkane ; Reagent: Zn(Hg)/HCl}"
+  },
+  {
+    "question":"\\text{Wolff Kishner Reduction}",
+    "answer":"\\text{R-CO-R → Alkane ; Reagent: NH2-NH2 / KOH}"
+  },
+  {
+    "question":"\\text{Sabatier Sanderson Reaction}",
+    "answer":"\\text{Alkyne → Alkane ; Reagent: Raney Ni, H2, Δ}"
+  },
+  {
+    "question":"\\text{Wurtz Reaction}",
+    "answer":"\\text{R-X + 2Na + R-X → R-R ; Reagent: Dry ether}"
+  },
+  {
+    "question":"\\text{Fittig Reaction}",
+    "answer":"\\text{Ar-X + 2Na + Ar-X → Ar-Ar ; Reagent: Dry ether}"
+  },
+  {
+    "question":"\\text{Wurtz-Fittig Reaction}",
+    "answer":"\\text{Ar-X + 2Na + R-X → Ar-R ; Reagent: Dry ether}"
+  },
+  {
+    "question":"\\text{Ullmann Reaction}",
+    "answer":"\\text{Ar-X + 2Cu → Ar-Ar + 2CuX ; Reagent: Heat}"
+  },
+  {
+    "question":"\\text{Frankland Reaction}",
+    "answer":"\\text{2R-X + Zn → R-R + ZnX2}"
+  },
+  {
+    "question":"\\text{Kolbe’s Reaction}",
+    "answer":"\\text{R-COONa → R-R + CO2 + H2 ; Reagent: NaOH electrolysis}"
+  },
+  {
+    "question":"\\text{Finkelstein Reaction}",
+    "answer":"\\text{R-X + NaI → R-I + NaX ; Solvent: Acetone}"
+  },
+  {
+    "question":"\\text{Swarts Reaction}",
+    "answer":"\\text{R-CH2Cl + SbCl3/HgF2 → R-CH2F}"
+  },
+  {
+    "question":"\\text{Reed Reaction}",
+    "answer":"\\text{CH3-CH2-CH2Cl + SO2 + Cl2 → CH3-CH2-SO2Cl}"
+  },
+  {
+    "question":"\\text{Birch Reduction}",
+    "answer":"\\text{Ar + 2e- + 2H+ → 1,4-Cyclohexadiene ; Reagent: Na/NH3(l)}"
+  },
+  {
+    "question":"\\text{Borodin–Simonson Reaction}",
+    "answer":"\\text{CH2I2 + Zn → Cyclopropane ; Reagent: Zn–Cu couple}"
+  },
+  {
+    "question":"\\text{Groves Process}",
+    "answer":"\\text{R-OH + HX → R-X + H2O ; Reagent: ZnCl2}"
+  },
+  {
+    "question":"\\text{Darzen’s Process}",
+    "answer":"\\text{C6H5OH + SOCl2 → C6H5Cl + SO2 + HCl}"
+  },
+  {
+    "question":"\\text{Hunsdiecker Reaction}",
+    "answer":"\\text{R-COONa + Br2 → R-Br + CO2 ; Reagent: CCl4}"
+  },
+  {
+    "question":"\\text{Borodin–Simonini Reaction}",
+    "answer":"\\text{R-COOR' + AgNO3 + I2 → R-I + CO2 + AgI}"
+  },
+  {
+    "question":"\\text{Friedel Craft Alkylation}",
+    "answer":"\\text{Ar-H + R-X → Ar-R ; Reagent: AlCl3/FeCl3}"
+  },
+  {
+    "question":"\\text{Reimer–Tiemann Reaction}",
+    "answer":"\\text{Phenol + CHCl3 + NaOH → Salicylaldehyde}"
+  }
+]
