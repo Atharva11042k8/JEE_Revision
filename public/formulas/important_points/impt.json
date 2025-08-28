@@ -86,5 +86,13 @@
    {
     "question":"\\text{sin(45±}\\theta)",
     "answer":"\\frac{1}{\\sqrt{2}}(sin(\\theta)+cos(\\theta))"
+  },
+   {
+    "question":"\\text{cos(45+}\\theta)",
+    "answer":"\\frac{1}{\\sqrt{2}}(cos(\\theta)-sin(\\theta))"
+  },
+  {
+    "question":"\\text{cos(45-}\\theta)",
+    "answer":"\\frac{1}{\\sqrt{2}}(cos(\\theta)+sin(\\theta))"
   }
 ]
