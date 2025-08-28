@@ -82,5 +82,9 @@
   {
     "question":"\\text{diagonal of a regular hexagon is 2 times of side}",
     "answer":""
+  },
+   {
+    "question":"\\text{sin(45±}\\theta)",
+    "answer":"\\frac{1}{\\sqrt{2}}(sin(\\theta)+cos(\\theta))"
   }
 ]
