@@ -94,5 +94,9 @@
   {
     "question":"\\text{cos(45-}\\theta)",
     "answer":"\\frac{1}{\\sqrt{2}}(cos(\\theta)+sin(\\theta))"
+  },
+  {
+    "question":"\\text{sum of interior angle of a n sided polygon}",
+    "answer":"(n-1)180"
   }
 ]
