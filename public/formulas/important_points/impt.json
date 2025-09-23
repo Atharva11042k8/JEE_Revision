@@ -102,5 +102,9 @@
    {
     "question":"\\text{aagar question mai koi bhi 2 quantities i,j,k format mai given hai aur bola hai ki they are perpendicular, toh dot product of them is zero . use to find unknown i,j,k}",
     "answer":""
-   }
+   },
+  {
+    "question":"\\text{1 hourse power = __ watt?}",
+    "answer":"1hp=746watt"
+  }
 ]
