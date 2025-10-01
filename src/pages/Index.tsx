@@ -89,7 +89,7 @@ const Index = () => {
 
     // All questions have been shown
     if (shownIndices.length === formulas.length) {
-      toast.success("🎉 All questions for this chapter have been shown!");
+      toast.success("ho gaya !!");
       // Optionally, reset to allow re-review, uncomment below if desired
       // setShownIndices([]);
       // setFormulaIndex(0);
@@ -104,7 +104,7 @@ const Index = () => {
       .filter(idx => !shownIndices.includes(idx));
     if (availableIndices.length === 0) {
       // Defensive, shouldn't happen
-      toast.success("🎉 All questions for this chapter have been shown!");
+      toast.success("ho gaya !!");
       return;
     }
     // Pick one at random
