@@ -122,5 +122,9 @@
     {
         "question":"6400×{\\frac{2π}{24×60×60}}^2\\;=\\;?",
         "answer":"3.39×10^{-5}"
+    },
+    {
+        "question":"\\text{gravitation field due to arc of a ring}",
+        "answer":"\\frac{2Gm}{r²}\\frac{sin(\\frac{θ}{2})}{θ}"
     }
 ]
