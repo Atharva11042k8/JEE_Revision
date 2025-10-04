@@ -98,7 +98,7 @@
   {
     "question":"\\text{sum of interior angle of a n sided polygon}",
     "answer":"(n-1)180"
-  }
+  },
    {
     "question":"\\text{aagar question mai koi bhi 2 quantities i,j,k format mai given hai aur bola hai ki they are perpendicular, toh dot product of them is zero . use to find unknown i,j,k}",
     "answer":""
