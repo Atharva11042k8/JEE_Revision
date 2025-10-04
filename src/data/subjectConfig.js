@@ -15,6 +15,7 @@ export const SUBJECT_CONFIG = [
       { name: 'Gravitation', file: 'physics/gravitation.json' },
       { name: 'Heat', file: 'physics/heat.json' },
       { name: 'Fluids', file: 'physics/fluids.json' },
+      { name: 'current electricity', file: 'physics/current-electricity.json'}
     ]
   },
   {
