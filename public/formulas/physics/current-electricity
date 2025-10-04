@@ -1,0 +1,142 @@
+[
+    {
+        "question": "current",
+        "answer": "\\frac{dq}{dt}"
+    },
+    {
+        "question": "\\text{direction of current for electron and proton}",
+        "answer": ""
+    },
+    {
+        "question": "\\text{carrier density}",
+        "answer": "\\frac{\\text{no of e}}{volume}"
+    },
+    {
+        "question": "\\text{drift velocity}",
+        "answer": "\\frac{eEτ}{m}"
+    },
+    {
+        "question": "\\text{mobility}",
+        "answer": "\\frac{v_d}{E}"
+    },
+    {
+        "question": "\\text{relation in current and drift velocity}",
+        "answer": "I=v_dneA"
+    },
+    {
+        "question": "resistivity(\\rho)",
+        "answer": "\\rho=\\frac{m}{ne^2τ}"
+    },
+    {
+        "question": "resistance(R)",
+        "answer": "R=\\frac{\\rho l}{A}"
+    },
+    {
+        "question": "conductivity",
+        "answer": "\\frac{1}{\\rho}"
+    },
+    {
+        "question": "\\text{relation in electric field and current}",
+        "answer": "I=\\sigma EA"
+    },
+    {
+        "question": "\\text{relation in temp and resistance}",
+        "answer": "\\text{for conductors: T(↑)→R(↑), for semiconductors: T(↑)→R(↓)}"
+    },
+    {
+        "question": "ɑ_{eq} (for series and parallel)",
+        "answer": "ɑ_{eq}=\\frac{ɑ_1+ɑ_2...}{n}"
+    },
+    {
+        "question": "\\text{current density(J)}",
+        "answer": "J=\\frac{I}{A}"
+    },
+    {
+        "question": "\\text{relation btwn electric field and current density}",
+        "answer": "J=\\sigma E"
+    },
+    {
+        "question": "\\text{eqn of continuity}",
+        "answer": "A_1v_1=A_2v_2"
+    },
+    {
+        "question": "\\text{NOTE: if a wire is stretched to n times then resistance will become }n^2\\;times",
+        "answer": ""
+    },
+    {
+        "question": "\\text{effect of temperature on resistivity}",
+        "answer": "\\text{for conductor directly proportional, for semiconductor inversely proportional}"
+    },
+    {
+        "question": "\\text{resistance in spherical conductor}",
+        "answer": "R=\\frac{\\rho(r_2-r_1)}{4\\pi r_1r_2}"
+    },
+    {
+        "question": "\\text{resistance in cylindrical conductor}",
+        "answer": "R=\\frac{\\rho l}{\\pi r^2}"
+    },
+    {
+        "question": "\\text{resistance in cylindrical conductor(inside hollow)(current parallel)}",
+        "answer": "R=\\frac{\\rho l}{\\pi(r_2^2-r_1^2)}"
+    },
+    {
+        "question": "\\text{resistance in cylindrical conductor(inside hollow)(current perpendicular)}",
+        "answer": "R=\\frac{\\r_2-r_1}{4\\pi k r_1r_2}(k=//frac{1}{\\rho})"
+    },
+    {
+        "question": "\\text{color coding }",
+        "answer": ""
+    },
+    {
+        "question": "\\text{combination of resistors in series and parallel}",
+        "answer": "R_{series}=R_1+R_2\\;\\;\\frac{1}{R_{parallel}=\\frac{1}{R_1}+\\frac{1}{R_2}"
+    },
+    {
+        "question": "\\text{equivalence resistance in cube(edge,face,body)}",
+        "answer": "R_{edge}=\\frac{7R}{12}, R_{face}=\\frac{3R}{4}, R_{body}=\\frac{5R}{6}"
+    },
+    {
+        "question": "\\text{EMF of battery when current is drawing and providing}",
+        "answer": "drawing:E=v-IR, providing:E=v+IR"
+    },
+    {
+        "question": "\\text{combination of cells and resistor in series}",
+        "answer": "E_{eq}=E_1+E_2+...(when\\;same\\;polarity), R_{eq}=R_1+R_2+..."
+    },
+    {
+        "question": "\\text{combination of cells and resistor in parallel}",
+        "answer": "\\frac{E_{eq}}{R_{eq}}=\\frac{E_1}{R_1}+\\frac{E_2}{R_2}+...(when\\;same\\;polarity), \\frac{1}{R_{eq}}=\\frac{1}{R_1}+\\frac{1}{R_2}+..."
+    },
+    {
+        "question": "\\text{mixed combination of cells:power max condition}",
+        "answer": "R_{ext}=R_{int}"
+    },
+    {
+        "question": "\\text{kirchhoff 1^{st}\\;law",
+        "answer": "\\text{at node: sum of current entering= sum of current leaving}"
+    },
+    {
+        "question": "//text{kirchhoff 2^{st}\\;law}",
+        "answer": ""
+    },
+    {
+        "question": "//text{condition for weatstone}",
+        "answer": ""
+    },
+    {
+        "question": "//text{heating effect}",
+        "answer": "H=pt,(p=i^2R,p=//frac{v^2}{R},H=vi)"
+    },
+    {
+        "question": "//text{how to find brightness of a bulb}",
+        "answer": "//text{1.convert all bulbs to resistor,  2.find current across each bulb  3.find total power across each bulb,  4.more is the power more will be the brightness}"
+    },
+    {
+        "question": "//text{combination of bulb in series,parallel}",
+        "answer": "P_s=//frac{1}{p_1}=//frac{1}{p_2}...,P_p=p_1_P_2..."
+    },
+    {
+        "question": "//text{special relation of heater in series and parallel}",
+        "answer": "//frac{h_p}{h_s}=4"
+    }
+]
