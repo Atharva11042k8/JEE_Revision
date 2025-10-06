@@ -113,5 +113,10 @@
   },
   {
     "question":"\\text{in NVT aagar question mai bola hai ki round off to 2 decimal places and answer aa raha hai 1.666... toh dont mark 1.66 uska 1.67 hoga. aur aagar 1.44.. hota toh 1.44 aur 1.55.. ka 1.55}",
+    "answer": ""
+  },
+  {
+    "question":"read question carefully, underline what you have to find",
+    "answer":""
   }
 ]
