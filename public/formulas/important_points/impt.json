@@ -110,5 +110,8 @@
   {
     "question":"\\text{in physics aagar koi bhi 2 quantity 90° ke angle pe hai toh use dit product to get relation}",
     "answer":"1hp=746watt"
+  },
+  {
+    "question":"\\text{in NVT aagar question mai bola hai ki round off to 2 decimal places and answer aa raha hai 1.666... toh dont mark 1.66 uska 1.67 hoga. aur aagar 1.44.. hota toh 1.44 aur 1.55.. ka 1.55}",
   }
 ]
