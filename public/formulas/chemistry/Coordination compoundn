@@ -1,0 +1,138 @@
+[
+    {
+        "question": "\\mathrm{H}_2\\mathrm{O}\\;\\text{(Ligand Name)}",
+        "answer": "\\text{aqua (or aquo)}"
+    },
+    {
+        "question": "\\mathrm{NH}_3\\;\\text{(Ligand Name)}",
+        "answer": "\\text{ammine}"
+    },
+    {
+        "question": "\\mathrm{CO}\\;\\text{(Ligand Name)}",
+        "answer": "\\text{carbonyl}"
+    },
+    {
+        "question": "\\mathrm{NO}\\;\\text{(Ligand Name)}",
+        "answer": "\\text{nitrosyl}"
+    },
+    {
+        "question": "\\mathrm{PPh}_3\\;\\text{(Ligand Name)}",
+        "answer": "\\text{triphenylphosphine}"
+    },
+    {
+        "question": "\\mathrm{CH}_3-\\mathrm{NH}_2\\;\\text{(Ligand Name)}",
+        "answer": "\\text{methylamine}"
+    },
+    {
+        "question": "\\mathrm{NH}_2-\\mathrm{CH}_2-\\mathrm{CH}_2-\\mathrm{NH}_2\\;\\text{(Ligand Name)}",
+        "answer": "\\text{ethane-1,2-diamine (or en)}"
+    },
+    {
+        "question": "\\mathrm{X}^{-}\\;\\text{(General halide Ligand Name)}",
+        "answer": "\\text{halido}"
+    },
+    {
+        "question": "\\mathrm{OH}^{-}\\;\\text{(Ligand Name)}",
+        "answer": "\\text{hydroxido (or hydroxo)}"
+    },
+    {
+        "question": "\\mathrm{O}^{2-}\\;\\text{(Ligand Name)}",
+        "answer": "\\text{oxido (or oxo)}"
+    },
+    {
+        "question": "\\mathrm{O}_2^{2-}\\;\\text{(Ligand Name)}",
+        "answer": "\\text{peroxido (or peroxo)}"
+    },
+    {
+        "question": "\\mathrm{NH}_2^{-}\\;\\text{(Ligand Name)}",
+        "answer": "\\text{amido}"
+    },
+    {
+        "question": "\\mathrm{H}^{-}\\;\\text{(Ligand Name)}",
+        "answer": "\\text{hydrido}"
+    },
+    {
+        "question": "\\mathrm{CN}^{-}\\;\\text{(Ligand Name)}",
+        "answer": "\\text{cyanido (or cyano)}"
+    },
+    {
+        "question": "\\mathrm{N}_3^{-}\\;\\text{(Ligand Name)}",
+        "answer": "\\text{azido}"
+    },
+    {
+        "question": "\\mathrm{CO}_3^{2-}\\;\\text{(Ligand Name)}",
+        "answer": "\\text{carbonato}"
+    },
+    {
+        "question": "\\mathrm{SO}_4^{2-}\\;\\text{(Ligand Name)}",
+        "answer": "\\text{sulphato (or sulfato)}"
+    },
+    {
+        "question": "\\mathrm{C}_2\\mathrm{O}_4^{2-}\\;\\text{(Ligand Name)}",
+        "answer": "\\text{oxalato (or Ox)}"
+    },
+    {
+        "question": "\\mathrm{CH}_3\\mathrm{COO}^{-}\\;\\text{(Ligand Name)}",
+        "answer": "\\text{acetato}"
+    },
+    {
+        "question": "\\mathrm{NO}_2^{-}\\;\\text{(N-bonded Ligand Name)}",
+        "answer": "\\text{nitrito-N}"
+    },
+    {
+        "question": "\\mathrm{ONO}^{-}\\;\\text{(O-bonded Ligand Name)}",
+        "answer": "\\text{nitrito-O}"
+    },
+    {
+        "question": "\\mathrm{SCN}^{-}\\;\\text{(N-bonded Ligand Name)}",
+        "answer": "\\text{thiocyanato-N}"
+    },
+    {
+        "question": "\\mathrm{NCS}^{-}\\;\\text{(S-bonded Ligand Name)}",
+        "answer": "\\text{thiocyanato-S}"
+    },
+    {
+        "question": "\\mathrm{NO}^{+}\\;\\text{(Ligand Name)}",
+        "answer": "\\text{nitrosonium}"
+    },
+    {
+        "question": "\\text{Metal Cr in Anionic Complex}",
+        "answer": "\\text{chromate}"
+    },
+    {
+        "question": "\\text{Metal Pt in Anionic Complex}",
+        "answer": "\\text{platinate}"
+    },
+    {
+        "question": "\\text{Metal Co in Anionic Complex}",
+        "answer": "\\text{cobaltate}"
+    },
+    {
+        "question": "\\text{Metal Ni in Anionic Complex}",
+        "answer": "\\text{nickelate}"
+    },
+    {
+        "question": "\\text{Metal Zn in Anionic Complex}",
+        "answer": "\\text{zincate}"
+    },
+    {
+        "question": "\\text{Metal Fe in Anionic Complex}",
+        "answer": "\\text{ferrate}"
+    },
+    {
+        "question": "\\text{Metal Ag in Anionic Complex}",
+        "answer": "\\text{argentate}"
+    },
+    {
+        "question": "\\text{Metal Au in Anionic Complex}",
+        "answer": "\\text{aurate}"
+    },
+    {
+        "question": "\\text{Metal Sn in Anionic Complex}",
+        "answer": "\\text{stannate}"
+    },
+    {
+        "question": "\\text{Metal Pb in Anionic Complex}",
+        "answer": "\\text{plumbate}"
+    }
+]
