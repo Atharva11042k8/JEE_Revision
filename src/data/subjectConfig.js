@@ -32,6 +32,7 @@ export const SUBJECT_CONFIG = [
       { name: 'IUPAC', file: 'chemistry/iupac.json' },
       { name: 'GOC', file: 'chemistry/goc.json' },
       { name: 'Isomerism', file: 'chemistry/isomerism.json' },
+      { name: 'Coordination compound', file: 'chemistry/Coordination_compound.json'}
     ],
   },
   {
