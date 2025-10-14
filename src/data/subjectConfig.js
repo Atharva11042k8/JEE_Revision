@@ -64,3 +64,4 @@ export const SUBJECT_CONFIG = [
     ]
   }
 ];
+
