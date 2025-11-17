@@ -130,5 +130,21 @@
   {
     "question":"\\text{ring se lage aagle carbon par aagar + hai to ring expand ho sakti hai}",
     "answer":"10^{-6}m^3"
+  },
+  {
+    "question":"1erg=?",
+    "answer":"10^{-7}J"
+  },
+  {
+    "question":"1L=__ m³",
+    "answer":"1L = 10^{-3}m3"
+  },
+  {
+    "question":"1G=?",
+    "answer":"1G=10⁹"
+  },
+  {
+    "question":"",
+    "answer":""
   }
 ]
