@@ -1,0 +1,698 @@
+[
+  {
+    "question": "matrix",
+    "answer": "m \\times n \\text{ rectangular array of elements } a_{ij}"
+  },
+  {
+    "question": "element a_ij",
+    "answer": "i^{th} \\text{ row, } j^{th} \\text{ column element}"
+  },
+  {
+    "question": "order of matrix",
+    "answer": "m \\times n"
+  },
+  {
+    "question": "total elements in m×n",
+    "answer": "mn"
+  },
+  {
+    "question": "row matrix",
+    "answer": "1 \\times n"
+  },
+  {
+    "question": "column matrix",
+    "answer": "m \\times 1"
+  },
+  {
+    "question": "horizontal matrix",
+    "answer": "m < n"
+  },
+  {
+    "question": "vertical matrix",
+    "answer": "m > n"
+  },
+  {
+    "question": "zero/null matrix",
+    "answer": "a_{ij}=0\\; \\forall\\; i,j"
+  },
+  {
+    "question": "square matrix",
+    "answer": "m=n"
+  },
+  {
+    "question": "diagonal elements",
+    "answer": "a_{11},a_{22},...,a_{nn}"
+  },
+  {
+    "question": "conjugate elements",
+    "answer": "a_{ij} \\text{ and } a_{ji}"
+  },
+  {
+    "question": "trace(A)",
+    "answer": "\\text{Tr}(A)=\\sum_{i=1}^{n} a_{ii}"
+  },
+  {
+    "question": "upper triangular",
+    "answer": "a_{ij}=0\\; \\forall\\; i>j"
+  },
+  {
+    "question": "lower triangular",
+    "answer": "a_{ij}=0\\; \\forall\\; i<j"
+  },
+  {
+    "question": "min zeros in triangular matrix",
+    "answer": "\\frac{n(n-1)}{2}"
+  },
+  {
+    "question": "diagonal matrix",
+    "answer": "a_{ij}=0\\; (i\\neq j)"
+  },
+  {
+    "question": "min zeros in diagonal",
+    "answer": "n(n-1)"
+  },
+  {
+    "question": "scalar matrix",
+    "answer": "a_{ii}=k"
+  },
+  {
+    "question": "identity matrix",
+    "answer": "a_{ii}=1"
+  },
+  {
+    "question": "singleton matrix",
+    "answer": "1\\times 1"
+  },
+  {
+    "question": "equality of matrices",
+    "answer": "same order + corresponding elements equal"
+  },
+  {
+    "question": "A+B condition",
+    "answer": "same order"
+  },
+  {
+    "question": "A-B condition",
+    "answer": "same order"
+  },
+  {
+    "question": "scalar multiplication",
+    "answer": "kA = (ka_{ij})"
+  },
+  {
+    "question": "A+B property",
+    "answer": "A+B = B+A"
+  },
+  {
+    "question": "(A+B)+C",
+    "answer": "A+(B+C)"
+  },
+  {
+    "question": "additive identity",
+    "answer": "A+O = A"
+  },
+  {
+    "question": "additive inverse",
+    "answer": "A+(-A)=O"
+  },
+  {
+    "question": "matrix multiplication condition",
+    "answer": "A_{m\\times n} B_{n\\times p} = C_{m\\times p}"
+  },
+  {
+    "question": "AB=BA?",
+    "answer": "not always"
+  },
+  {
+    "question": "A(B+C)",
+    "answer": "AB+AC"
+  },
+  {
+    "question": "(AB)C",
+    "answer": "A(BC)"
+  },
+  {
+    "question": "AI",
+    "answer": "A"
+  },
+  {
+    "question": "IA",
+    "answer": "A"
+  },
+  {
+    "question": "AB=A and BA=B →",
+    "answer": "A^2=A, B^2=B"
+  },
+  {
+    "question": "transpose",
+    "answer": "A^T: \\text{ interchange rows and columns }"
+  },
+  {
+    "question": "(A^T)^T",
+    "answer": "A"
+  },
+  {
+    "question": "(A+B)^T",
+    "answer": "A^T + B^T"
+  },
+  {
+    "question": "(kA)^T",
+    "answer": "kA^T"
+  },
+  {
+    "question": "(AB)^T",
+    "answer": "B^T A^T"
+  },
+  {
+    "question": "(ABC)^T",
+    "answer": "C^T B^T A^T"
+  },
+  {
+    "question": "(A^m)^T",
+    "answer": "(A^T)^m"
+  },
+  {
+    "question": "symmetric matrix",
+    "answer": "A^T = A"
+  },
+  {
+    "question": "skew symmetric matrix",
+    "answer": "A^T = -A"
+  },
+  {
+    "question": "skew diag elements",
+    "answer": "a_{ii}=0"
+  },
+  {
+    "question": "A+A^T",
+    "answer": "symmetric"
+  },
+  {
+    "question": "A-A^T",
+    "answer": "skew symmetric"
+  },
+  {
+    "question": "A A^T",
+    "answer": "symmetric"
+  },
+  {
+    "question": "det(skew odd order)",
+    "answer": "0"
+  },
+  {
+    "question": "distinct entries symmetric n×n",
+    "answer": "\\frac{n(n+1)}{2}"
+  },
+  {
+    "question": "distinct entries skew n×n",
+    "answer": "n^2 - n + 1"
+  },
+  {
+    "question": "orthogonal matrix",
+    "answer": "A A^T = I"
+  },
+  {
+    "question": "orthogonal → inverse",
+    "answer": "A^{-1} = A^T"
+  },
+  {
+    "question": "det(orthogonal)",
+    "answer": "±1"
+  },
+  {
+    "question": "A,B orthogonal → AB?",
+    "answer": "orthogonal"
+  },
+  {
+    "question": "A orthogonal → A^{-1} orthogonal?",
+    "answer": "yes"
+  },
+  {
+    "question": "A orthogonal → A^T orthogonal?",
+    "answer": "yes"
+  },
+  {
+    "question": "idempotent matrix",
+    "answer": "A^2 = A"
+  },
+  {
+    "question": "involutory matrix",
+    "answer": "A^2 = I"
+  },
+  {
+    "question": "nilpotent matrix",
+    "answer": "A^m = O"
+  },
+  {
+    "question": "nilpotent note",
+    "answer": "check manually by powers"
+  },
+  {
+    "question": "determinant",
+    "answer": "value of square array |A|"
+  },
+  {
+    "question": "order of determinant",
+    "answer": "n \\times n"
+  },
+  {
+    "question": "1×1 determinant",
+    "answer": "|a_{11}| = a_{11}"
+  },
+  {
+    "question": "2×2 determinant",
+    "answer": "|A| = a_{11}a_{22} - a_{12}a_{21}"
+  },
+  {
+    "question": "minor M_ij",
+    "answer": "det \\text{ after deleting row } i \\text{ and column } j"
+  },
+  {
+    "question": "cofactor A_ij",
+    "answer": "A_{ij} = (-1)^{i+j} M_{ij}"
+  },
+  {
+    "question": "cofactor signs 3×3",
+    "answer": "\\begin{pmatrix} + & - & + \\\\ - & + & - \\\\ + & - & + \\end{pmatrix}"
+  },
+  {
+    "question": "expansion row i",
+    "answer": "|A| = \\sum_{j=1}^n a_{ij} A_{ij}"
+  },
+  {
+    "question": "expansion column j",
+    "answer": "|A| = \\sum_{i=1}^n a_{ij} A_{ij}"
+  },
+  {
+    "question": "non-corresponding cofactors",
+    "answer": "\\sum a_{ij} A_{kj} = 0\\; (i\\neq k)"
+  },
+  {
+    "question": "det(A^T)",
+    "answer": "|A|"
+  },
+  {
+    "question": "det with all zeros in row/column",
+    "answer": "0"
+  },
+  {
+    "question": "identical rows/columns",
+    "answer": "|A| = 0"
+  },
+  {
+    "question": "swap two rows",
+    "answer": "D_{new} = -D"
+  },
+  {
+    "question": "swap two columns",
+    "answer": "D_{new} = -D"
+  },
+  {
+    "question": "row/col multiplied by k",
+    "answer": "D_{new} = kD"
+  },
+  {
+    "question": "take k common from row",
+    "answer": "D = k \\times \\text{det of reduced}"
+  },
+  {
+    "question": "Ri → Ri + kRj",
+    "answer": "det same"
+  },
+  {
+    "question": "Ci → Ci + kCj",
+    "answer": "det same"
+  },
+  {
+    "question": "split row",
+    "answer": "det = det_1 + det_2"
+  },
+  {
+    "question": "|kA| for n×n",
+    "answer": "k^n |A|"
+  },
+  {
+    "question": "|AB|",
+    "answer": "|A| |B|"
+  },
+  {
+    "question": "|A^n|",
+    "answer": "|A|^n"
+  },
+  {
+    "question": "det(diagonal mat)",
+    "answer": "product of diagonal"
+  },
+  {
+    "question": "det(skew odd)",
+    "answer": "0"
+  },
+  {
+    "question": "row jump n steps",
+    "answer": "(-1)^n D"
+  },
+  {
+    "question": "factor theorem for determinant",
+    "answer": "if |A(x=a)|=0 → (x-a) factor"
+  },
+  {
+    "question": "area of triangle det",
+    "answer": "\\text{Area} = \\frac{1}{2} \\left| \\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix} \\right|"
+  },
+  {
+    "question": "std det: sin pattern",
+    "answer": "\\begin{vmatrix} \\sin A & \\sin B & \\sin C \\\\ \\sin(B-C) & \\sin(C-A) & \\sin(A-B) \\\\ 1 & 1 & 1 \\end{vmatrix} = 4 \\sin\\frac{A-B}{2} \\sin\\frac{B-C}{2} \\sin\\frac{C-A}{2}"
+  },
+
+  {
+    "question": "std det: 1,a,a^2 type",
+    "answer": "\\begin{vmatrix} 1 & 1 & 1 \\\\ a & b & c \\\\ a^2 & b^2 & c^2 \\end{vmatrix} = (b-a)(c-a)(c-b)"
+  },
+
+  {
+    "question": "std det: AP row",
+    "answer": "\\begin{vmatrix} a & a+d & a+2d \\\\ 1 & 1 & 1 \\\\ 1 & 1 & 1 \\end{vmatrix} = 0 \\; (\\text{rows proportional})"
+  },
+
+  {
+    "question": "std det: GP row",
+    "answer": "\\begin{vmatrix} a & ar & ar^2 \\\\ 1 & 1 & 1 \\\\ 1 & 1 & 1 \\end{vmatrix} = 0"
+  },
+
+  {
+    "question": "std det: cyclic a,b,c",
+    "answer": "\\begin{vmatrix} a & b & c \\\\ b & c & a \\\\ c & a & b \\end{vmatrix} = (a+b+c)(a^2 + b^2 + c^2 - ab - bc - ca)"
+  },
+
+  {
+    "question": "std det: (x+y+z)",
+    "answer": "\\begin{vmatrix} x & y & z \\\\ y & z & x \\\\ z & x & y \\end{vmatrix} = (x+y+z)(x^2+y^2+z^2 - xy - yz - zx)"
+  },
+
+  {
+    "question": "std det: 1,x,x^2",
+    "answer": "\\begin{vmatrix} 1 & 1 & 1 \\\\ x & y & z \\\\ x^2 & y^2 & z^2 \\end{vmatrix} = (y-x)(z-x)(z-y)"
+  },
+
+  {
+    "question": "std det: 1,a,b;1,a^2,b^2",
+    "answer": "\\begin{vmatrix} 1 & 1 & 1 \\\\ a & b & c \\\\ a^3 & b^3 & c^3 \\end{vmatrix} = (b-a)(c-a)(c-b)(a+b+c)"
+  },
+  {
+    "question": "Ri→Ri+Rj trick",
+    "answer": "use to create zeros for easy expansion"
+  },
+  {
+    "question": "Ci→Ci-Cj trick",
+    "answer": "use to factor out differences"
+  },
+  {
+    "question": "take common from column",
+    "answer": "factor pulls out of det"
+  },
+  {
+    "question": "row proportional → det",
+    "answer": "0"
+  },
+  {
+    "question": "column proportional → det",
+    "answer": "0"
+  },
+  {
+    "question": "max det (3×3)",
+    "answer": "diag = \\min(\\alpha_i), \\; non\\text{-}diag = \\max(\\alpha_i)"
+  },
+  {
+    "question": "min det (3×3)",
+    "answer": "-(\\text{max det})"
+  },
+  {
+    "question": "max–min condition",
+    "answer": "a_i,b_i,c_i \\in \\{\\alpha_1,\\alpha_2,...,\\alpha_n\\}"
+  },
+  {
+    "question": "det identity",
+    "answer": "1"
+  },
+  {
+    "question": "det zero matrix",
+    "answer": "0"
+  },
+  {
+    "question": "det triangular mat",
+    "answer": "product of diagonal"
+  },
+  {
+    "question": "det orthogonal A",
+    "answer": "\\pm 1"
+  },
+  {
+    "question": "det(A)=det(A^T)?",
+    "answer": "yes"
+  },
+  {
+    "question": "adj A",
+    "answer": "(\\text{cofactor matrix})^T"
+  },
+  {
+    "question": "cofactor matrix",
+    "answer": "[A_{ij}]"
+  },
+  {
+    "question": "A adjA",
+    "answer": "|A| I_n"
+  },
+  {
+    "question": "adjA A",
+    "answer": "|A| I_n"
+  },
+  {
+    "question": "|adjA|",
+    "answer": "|A|^{n-1}"
+  },
+  {
+    "question": "adj(adjA)",
+    "answer": "|A|^{n-2} A"
+  },
+  {
+    "question": "|adj(adjA)|",
+    "answer": "|A|^{(n-1)^2}"
+  },
+  {
+    "question": "adj(A^T)",
+    "answer": "(adjA)^T"
+  },
+  {
+    "question": "adj(AB)",
+    "answer": "adjB \\cdot adjA"
+  },
+  {
+    "question": "adj(A^m)",
+    "answer": "(adjA)^m"
+  },
+  {
+    "question": "adj(kA)",
+    "answer": "k^{n-1} adjA"
+  },
+  {
+    "question": "adj(A^{-1})",
+    "answer": "(adjA)^{-1}"
+  },
+  {
+    "question": "special: adj(I_n)",
+    "answer": "I_n"
+  },
+  {
+    "question": "adj(diagonal matrix)",
+    "answer": "diagonal"
+  },
+  {
+    "question": "adj(I_n)^m",
+    "answer": "I_n"
+  },
+  {
+    "question": "A^{-1}",
+    "answer": "\\frac{1}{|A|} adjA"
+  },
+  {
+    "question": "inverse condition",
+    "answer": "|A| \\neq 0"
+  },
+  {
+    "question": "A^{-1} A",
+    "answer": "I"
+  },
+  {
+    "question": "A A^{-1}",
+    "answer": "I"
+  },
+  {
+    "question": "(AB)^{-1}",
+    "answer": "B^{-1} A^{-1}"
+  },
+  {
+    "question": "(A^T)^{-1}",
+    "answer": "(A^{-1})^T"
+  },
+  {
+    "question": "(A^{-1})^{-1}",
+    "answer": "A"
+  },
+  {
+    "question": "|A^{-1}|",
+    "answer": "|A|^{-1}"
+  },
+  {
+    "question": "(kA)^{-1}",
+    "answer": "\\frac{1}{k} A^{-1}"
+  },
+  {
+    "question": "singular matrix",
+    "answer": "|A| = 0"
+  },
+  {
+    "question": "non-singular matrix",
+    "answer": "|A| \\neq 0"
+  },
+  {
+    "question": "inverse exists?",
+    "answer": "only if non-singular"
+  },
+  {
+    "question": "homogeneous Ax=0 trivial soln",
+    "answer": "x=0"
+  },
+  {
+    "question": "homogeneous non-trivial soln",
+    "answer": "|A|=0"
+  },
+  {
+    "question": "A^{-1} for orthogonal A",
+    "answer": "A^T"
+  },
+  {
+    "question": "AX = B",
+    "answer": "A \\text{ coefficient matrix},\\; X \\text{ variable matrix}"
+  },
+  {
+    "question": "unique solution cond",
+    "answer": "|A| \\neq 0"
+  },
+  {
+    "question": "no solution cond",
+    "answer": "|A|=0,\\; (adjA)B \\neq 0"
+  },
+  {
+    "question": "infinite solutions cond",
+    "answer": "|A|=0,\\; (adjA)B = 0"
+  },
+  {
+    "question": "homogeneous system",
+    "answer": "AX=0"
+  },
+  {
+    "question": "trivial soln",
+    "answer": "X=0"
+  },
+  {
+    "question": "non-trivial soln cond",
+    "answer": "|A|=0"
+  },
+  {
+    "question": "homogeneous consistency",
+    "answer": "always consistent"
+  },
+  {
+    "question": "Cramer condition unique",
+    "answer": "D \\neq 0"
+  },
+  {
+    "question": "Cramer no solution",
+    "answer": "D=0, \\; D_i \\neq 0"
+  },
+  {
+    "question": "Cramer infinite",
+    "answer": "D=0, \\; D_1=D_2=D_3=0"
+  },
+  {
+    "question": "x via Cramer",
+    "answer": "x = \\frac{D_1}{D}"
+  },
+  {
+    "question": "y via Cramer",
+    "answer": "y = \\frac{D_2}{D}"
+  },
+  {
+    "question": "z via Cramer",
+    "answer": "z = \\frac{D_3}{D}"
+  },
+  {
+    "question": "char eqn",
+    "answer": "|A - \\lambda I| = 0"
+  },
+  {
+    "question": "char eqn roots",
+    "answer": "eigenvalues"
+  },
+  {
+    "question": "char eqn 2x2",
+    "answer": "\\lambda^2 - (\\text{Tr} A)\\lambda + |A| = 0"
+  },
+  {
+    "question": "char eqn sum roots",
+    "answer": "Tr(A)"
+  },
+  {
+    "question": "char eqn product roots",
+    "answer": "|A|"
+  },
+  {
+    "question": "char eqn 3x3",
+    "answer": "\\lambda^3 - (\\text{Tr}A)\\lambda^2 + \\tfrac{1}{2}\\lambda[(\\text{Tr}A)^2 - \\text{Tr}(A^2)] - |A| = 0"
+  },
+  {
+    "question": "Cayley–Hamilton",
+    "answer": "A \\text{ satisfies its own char eqn}"
+  },
+  {
+    "question": "sum det wrt index",
+    "answer": "apply \\sum \\text{ on each entry }"
+  },
+  {
+    "question": "d/dx |A|",
+    "answer": "sum \\text{ of det formed by } \\frac{d}{dx}\\text{ of one row at a time}"
+  },
+
+  {
+    "question": "d/dx det general",
+    "answer": "\\frac{d \\Delta}{dx} = \\sum_{i=1}^n \\Delta_i"
+  },
+  {
+    "question": "product of det",
+    "answer": "|AB| = |A||B|"
+  },
+  {
+    "question": "det product trick",
+    "answer": "can convert complicated det to product by reversing multiplication"
+  },
+  {
+    "question": "A,A^{-1} relation",
+    "answer": "AA^{-1} = I"
+  },
+  {
+    "question": "rank via determinant",
+    "answer": "largest order minor \\neq 0"
+  },
+  {
+    "question": "det(A^T A)",
+    "answer": "|A|^2"
+  },
+  {
+    "question": "Tr(A^T A)",
+    "answer": "sum \\text{ of squares of all elements of } A"
+  },
+  {
+    "question": "det(I + A)",
+    "answer": "\\text{expand by properties}"
+  }
+]
