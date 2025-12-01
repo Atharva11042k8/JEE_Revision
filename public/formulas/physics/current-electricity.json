@@ -1,3 +1,4 @@
+
 [
     {
         "question": "current",
@@ -81,7 +82,7 @@
     },
     {
         "question": "\\text{resistance in cylindrical conductor(inside hollow)(current perpendicular)}",
-        "answer": "R=\\frac{\\r_2-r_1}{4\\pi k r_1r_2}(k=//frac{1}{\\rho})"
+        "answer": "R=\\frac{\\r_2-r_1}{4\\pi k r_1r_2}(k=\\frac{1}{\\rho})"
     },
     {
         "question": "\\text{color coding }",
@@ -116,27 +117,27 @@
         "answer": "\\text{at node: sum of current entering= sum of current leaving}"
     },
     {
-        "question": "//text{kirchhoff 2^{st}\\;law}",
+        "question": "\\text{kirchhoff 2^{st}\\;law}",
         "answer": ""
     },
     {
-        "question": "//text{condition for weatstone}",
+        "question": "\\text{condition for weatstone}",
         "answer": ""
     },
     {
-        "question": "//text{heating effect}",
-        "answer": "H=pt,(p=i^2R,p=//frac{v^2}{R},H=vi)"
+        "question": "\\text{heating effect}",
+        "answer": "H=pt,(p=i^2R,p=\\frac{v^2}{R},H=vi)"
     },
     {
-        "question": "//text{how to find brightness of a bulb}",
-        "answer": "//text{1.convert all bulbs to resistor,  2.find current across each bulb  3.find total power across each bulb,  4.more is the power more will be the brightness}"
+        "question": "\\text{how to find brightness of a bulb}",
+        "answer": "\\text{1.convert all bulbs to resistor,  2.find current across each bulb  3.find total power across each bulb,  4.more is the power more will be the brightness}"
     },
     {
-        "question": "//text{combination of bulb in series,parallel}",
-        "answer": "P_s=//frac{1}{p_1}=//frac{1}{p_2}...,P_p=p_1_P_2..."
+        "question": "\\text{combination of bulb in series,parallel}",
+        "answer": "P_s=\\frac{1}{p_1}=\\frac{1}{p_2}...,P_p=p_1_P_2..."
     },
     {
-        "question": "//text{special relation of heater in series and parallel}",
-        "answer": "//frac{h_p}{h_s}=4"
+        "question": "\\text{special relation of heater in series and parallel}",
+        "answer": "\\frac{h_p}{h_s}=4"
     }
 ]
